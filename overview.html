@@ -487,7 +487,7 @@
 WindowsやmacOSにインストールするだけで誰でもAIを業務に活用可能です。
 ChatGPTの標準機能に加えて、企業内情報検索などailia独自のAIをプラス。
 AIを使った業務効率の改善が簡単に行えます。</p>
-<p><img src="img/overview_01.png" alt="aoverview_01.png"></p>
+<p><img src="img/overview_01.png" alt="overview_01.png"></p>
 <h2 id="機能">機能</h2>
 <p>aillia DX insightでは下記の機能を使用可能です。各機能で使用されるモデルと実行環境は下記となります。</p>
 <table>
@@ -500,19 +500,24 @@ AIを使った業務効率の改善が簡単に行えます。</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">テキスト検索</td>
-<td style="text-align:center">ChatGPT（回答生成）</td>
-<td style="text-align:center">Multilingual-E5 Base（インデックス作成）</td>
+<td style="text-align:center">文章検索（RAG）</td>
+<td style="text-align:center">ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
+<td style="text-align:center">ailia SDK（インデックス作成、ベクトル検索、Re-Rank機能）、カスタムLLM（回答生成）</td>
 </tr>
 <tr>
 <td style="text-align:center">画像生成</td>
 <td style="text-align:center">DALLE</td>
-<td style="text-align:center">-</td>
+<td style="text-align:center">StableDiffusion(* 準備中)</td>
 </tr>
 <tr>
-<td style="text-align:center">翻訳・要約・アイデア出し</td>
-<td style="text-align:center">ChatGPT</td>
-<td style="text-align:center">-</td>
+<td style="text-align:center">要約・アイデア出し</td>
+<td style="text-align:center">ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
+<td style="text-align:center">ailia SDK、カスタムLLM</td>
+</tr>
+<tr>
+<td style="text-align:center">翻訳</td>
+<td style="text-align:center">ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
+<td style="text-align:center">ailia SDK、カスタムLLM</td>
 </tr>
 <tr>
 <td style="text-align:center">画像検索</td>
@@ -536,23 +541,30 @@ AIを使った業務効率の改善が簡単に行えます。</p>
 </tr>
 <tr>
 <td style="text-align:center">OCR</td>
-<td style="text-align:center">-</td>
+<td style="text-align:center">Azure AI Vision(* 準備中)</td>
 <td style="text-align:center">PaddleOCR</td>
 </tr>
 </tbody>
 </table>
 <h2 id="対応ファイルフォーマット">対応ファイルフォーマット</h2>
 <p>ailia DX Insightがサポートしている形式は下記となります。</p>
-<h6 id="ドキュメントフォーマット">ドキュメントフォーマット</h6>
-<p><code>&apos;c&apos;, &apos;cpp&apos;, &apos;csv&apos;, &apos;json&apos;, &apos;java&apos;, &apos;md&apos;, &apos;py&apos;, &apos;rb&apos;, &apos;tex&apos;, &apos;txt&apos;, &apos;css&apos;, &apos;php&apos;, &apos;pdf&apos;, &apos;docx&apos;, &apos;xlsx&apos;,</code></p>
+<h6 id="オフィス系ドキュメントフォーマット">オフィス系ドキュメントフォーマット</h6>
+<p><code>pdf, doc, docx, txt, md, xlsx, csv, tex, css, html</code></p>
+<h6 id="プログラム系ドキュメントフォーマット">プログラム系ドキュメントフォーマット</h6>
+<p><code>c, cpp, json, java, py, rb, php</code><br></p>
+<p><br>
+<code>js, swift, .kt, rust, dart, lua</code>は設定<img src="img/icon_gear.png" alt="icon_gear">/インデックスから追加することができます。
+<img src="img/overview_02.png" alt="overview_02.png"></p>
 <h6 id="画像フォーマット">画像フォーマット</h6>
 <p> <code>&apos;png&apos;, &apos;jpg&apos;, &apos;jpeg&apos;</code></p>
 <h6 id="音声フォーマット">音声フォーマット</h6>
 <p><code>&apos;wav&apos;</code></p>
 <h2 id="ファイルの保存先">ファイルの保存先</h2>
 <p>ailia DX Insightは下記のフォルダにデータベースやモデルファイルを保存します。このフォルダを削除することで、ailia DX Insightを初期化することができます。<br>
-<code>Windows : c:/Users/[UserName]/Documents/ailia DX Insight</code><br>
-<code>macOS : ~/Documents/ailia DX Insight</code><br></p>
+<code>Windows : c:/Users/[UserName]/Documents(*)/ailia DX Insight</code><br>
+<code>macOS : ~/Documents(*)/ailia DX Insight</code><br></p>
+<p><br>
+(*)Windowsでは「マイドキュメント」、Macでは「書類」という呼び方もあります。</p>
 
                                 
                                 </section>
@@ -596,7 +608,7 @@ AIを使った業務効率の改善が簡単に行えます。</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"概要","level":"1.2","depth":1,"next":{"title":"セットアップ","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"previous":{"title":"HOME","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"overview.md","mtime":"2024-06-09T20:33:18.944Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-09T21:18:27.751Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"概要","level":"1.2","depth":1,"next":{"title":"セットアップ","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"previous":{"title":"HOME","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"overview.md","mtime":"2024-06-10T01:07:43.209Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-10T01:15:33.140Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
