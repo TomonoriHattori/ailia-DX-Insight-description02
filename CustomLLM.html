@@ -485,15 +485,15 @@
                                 <h1 id="カスタムllmの設定">カスタムLLMの設定</h1>
 <h2 id="カスタムllmのサーバの構築">カスタムLLMのサーバの構築</h2>
 <h3 id="chatgptの互換サーバについて">ChatGPTの互換サーバについて</h3>
-<p>ailia DX insightはChatGPTの互換サーバに対応しています。この章では、FastChatを使ってローカルLLMをChatGPT API互換サーバーとして使用する方法を採用します。</p>
+<p>ailia DX insightはChatGPTの互換サーバに対応しています。この章では、FastChatを使ってカスタムLLMをChatGPT API互換サーバーとして使用する方法を採用します。</p>
 <h3 id="fastchatのインストール">FastChatのインストール</h3>
 <p>サーバーを立てる端末にpythonモジュールとしてfschatをインストールします。
 <code>pip3 install fschat</code></p>
 <h3 id="サーバの起動">サーバの起動</h3>
-<p>vicuna-7b-v1.5をChatGPT API互換サーバーとして起動します。
-<code>python3 -m fastchat.serve.controller</code>
-<code>python3 -m fastchat.serve.model_worker –model-names “vicuna” –model-path lmsys/vicuna-7b-v1.5 –load-8bit</code>
-<code>python3 -m fastchat.serve.openai_api_server –-host localhost –-port 8000</code></p>
+<p>vicuna-7b-v1.5をChatGPT API互換サーバーとして起動します。<br>
+<code>python3 -m fastchat.serve.controller</code><br>
+<code>python3 -m fastchat.serve.model_worker –model-names “vicuna” –model-path lmsys/vicuna-7b-v1.5 –load-8bit</code><br>
+<code>python3 -m fastchat.serve.openai_api_server –-host localhost –-port 8000</code><br></p>
 <h2 id="カスタムllmのクライアントの設定">カスタムLLMのクライアントの設定</h2>
 <h3 id="設定画面の呼び出し">設定画面の呼び出し</h3>
 <p>ailia DX insightの初期画面にて、右上の歯車アイコンをクリックして設定ウィンドウを表示させます。<br>
@@ -555,7 +555,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"カスタムLLMの設定","level":"4.1.1.1","depth":3,"next":{"title":"RAGによる回答精度の向上","level":"4.1.2","depth":2,"path":"RAG.md","ref":"RAG.md","articles":[]},"previous":{"title":"セキュアな環境構築","level":"4.1.1","depth":2,"path":"Security.md","ref":"Security.md","articles":[{"title":"カスタムLLMの設定","level":"4.1.1.1","depth":3,"path":"CustomLLM.md","ref":"CustomLLM.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"CustomLLM.md","mtime":"2024-06-09T21:07:08.176Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-09T21:18:27.751Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"カスタムLLMの設定","level":"4.1.1.1","depth":3,"next":{"title":"RAGによる回答精度の向上","level":"4.1.2","depth":2,"path":"RAG.md","ref":"RAG.md","articles":[]},"previous":{"title":"セキュアな環境構築","level":"4.1.1","depth":2,"path":"Security.md","ref":"Security.md","articles":[{"title":"カスタムLLMの設定","level":"4.1.1.1","depth":3,"path":"CustomLLM.md","ref":"CustomLLM.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"CustomLLM.md","mtime":"2024-06-10T01:13:12.228Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-10T01:15:33.140Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
