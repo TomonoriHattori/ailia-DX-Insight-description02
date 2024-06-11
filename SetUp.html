@@ -164,6 +164,19 @@
             
         </li>
     
+        <li class="chapter " data-level="2.1.3" data-path="ConfigFile.html">
+            
+                <a href="ConfigFile.html">
+            
+                    
+                    コンフィグファイルを作成する
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -483,16 +496,17 @@
                                 <h1 id="セットアップ">セットアップ</h1>
 <h2 id="ダウンロード">ダウンロード</h2>
 <p>ailia DX Insightを<a href="https://ailia.ai/dx/" target="_blank">ダウンロード</a>して、zipを解凍します。</p>
-<h2 id="起動">起動</h2>
-<p>Windowsの場合は、aillia_dx_insight.msixをダブルクリックして起動します。 macOSの場合は、ailia_dx_insight.dmgを右クリックして開くで起動します。<br>
+<h2 id="インストーラの起動">インストーラの起動</h2>
+<p>Windowsの場合は、aillia_dx_insight.msixをダブルクリックしてインストーラを起動します。 macOSの場合は、ailia_dx_insight.dmgを右クリックして開くで起動します。<br>
 <img src="img/setup_00.png" alt="setup_00.png"><br></p>
-<h2 id="ライセンスファイルの選択">ライセンスファイルの選択</h2>
-<p>ライセンス確認のウィンドウが表示されるので、ライセンスファイルをフォルダから選択します。<br>
-<img src="img/setup_001.png" alt="setup_001.png"><br></p>
+<h2 id="ライセンスもしくはコンフィグファイルの選択">ライセンスもしくはコンフィグファイルの選択</h2>
+<p>初回起動時に「ライセンスもしくはコンフィグファイルを選択してください」とウィンドウに表示されます。ライセンスファイルをフォルダから選択します。<br>
+<img src="img/setup_001.png" alt="seyup_001"><br>
+<a href="ConfigFile.html">コンフィグファイルを選択する</a>ことでアプリケーションをカスタマイズすることができます。</p>
 <h2 id="openaiのapiキーの取得">OpenAIのAPIキーの取得</h2>
 <p>OpenAIのWEBページでアカウント登録を行い、OpenAIのAPIキーを取得します。 OpenAIのAPIキーを入力しなくてもailia DX Insightは使用できますが、機能が制限されます。</p>
 <h2 id="セットアップ">セットアップ</h2>
-<p>初回起動時にはチュートリアル画面が表示されます。<br>
+<p>ライセンスもしくはコンフィグファイルを選択後、チュートリアル画面が表示されます。<br>
 <img src="img/setup_01.png" alt="setup_01.png"><br>
 チュートリアルの最終画面にて、OpenAI APIキーの設定が可能です。</p>
 <h3 id="openai-apiキーの設定">OpenAI APIキーの設定</h3>
@@ -507,7 +521,7 @@
 <img src="img/setup_03.png" alt="setup_03.png"><br></li>
 <li>表示されたダイアログ内のテキストボックスに、&quot;sk-&quot;から始まるOpenAIのAPIキーを入力します。<br>
 <img src="img/setup_04.png" alt="setup_04.png"><br></li>
-<li>使用するchatGPTのバージョンを選択し、「閉じる」ボタンを押します。<h3 id="aiモデルのダウンロード">AIモデルのダウンロード</h3>
+<li>「OpenAI」をクリックして、使用するchatGPTのバージョンを選択し、「閉じる」ボタンを押します。<h3 id="aiモデルのダウンロード">AIモデルのダウンロード</h3>
 初回起動時のチュートリアルの終了後、AIモデルのダウンロードが開始されます。
 ダウンロードの進捗は左のサイドバー下部にて確認できます。<br>
 <img src="img/download_model.png" alt="download_model.png"><br>
@@ -552,7 +566,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"セットアップ","level":"1.3","depth":1,"next":{"title":"主な操作方法","level":"2.1","depth":1,"ref":"","articles":[{"title":"ファイルビューの操作","level":"2.1.1","depth":2,"path":"FileView.md","ref":"FileView.md","articles":[]},{"title":"ファイルをインデックスに登録する","level":"2.1.2","depth":2,"path":"IndexRegister.md","ref":"IndexRegister.md","articles":[]}]},"previous":{"title":"概要","level":"1.2","depth":1,"path":"overview.md","ref":"overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"SetUp.md","mtime":"2024-06-10T09:55:00.368Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-10T10:27:50.481Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"セットアップ","level":"1.3","depth":1,"next":{"title":"主な操作方法","level":"2.1","depth":1,"ref":"","articles":[{"title":"ファイルビューの操作","level":"2.1.1","depth":2,"path":"FileView.md","ref":"FileView.md","articles":[]},{"title":"ファイルをインデックスに登録する","level":"2.1.2","depth":2,"path":"IndexRegister.md","ref":"IndexRegister.md","articles":[]},{"title":"コンフィグファイルを作成する","level":"2.1.3","depth":2,"path":"ConfigFile.md","ref":"ConfigFile.md","articles":[]}]},"previous":{"title":"概要","level":"1.2","depth":1,"path":"overview.md","ref":"overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"SetUp.md","mtime":"2024-06-11T07:23:41.778Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-11T07:42:12.975Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
