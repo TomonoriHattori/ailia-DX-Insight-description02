@@ -103,6 +103,6 @@ body{
 	background: #00BBE0;
 }
 
-a svg {
-	vertical-align: middle;
+svg {
+	vertical-align: -3px;
 }
