@@ -102,3 +102,7 @@ body{
   color: #fff;
 	background: #00BBE0;
 }
+
+a svg {
+	vertical-align: middle;
+}
