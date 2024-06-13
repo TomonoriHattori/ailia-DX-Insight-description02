@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>コンフィグファイルを作成する · ailia DX Insight</title>
+        <title>主な操作方法 · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -48,10 +48,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="UseAI.html" />
+    <link rel="next" href="FileView.html" />
     
     
-    <link rel="prev" href="IndexRegister.html" />
+    <link rel="prev" href="SetUp.html" />
     
 
     </head>
@@ -126,7 +126,7 @@
         
         
         
-        <li class="chapter " data-level="2.1" >
+        <li class="chapter active" data-level="2.1" >
         
             <a href="MainOperation.html">
         
@@ -166,7 +166,7 @@
         
         </li>
         
-        <li class="chapter active" data-level="2.1.3" data-path="ConfigFile.html">
+        <li class="chapter " data-level="2.1.3" data-path="ConfigFile.html">
         
             <a href="ConfigFile.html">
         
@@ -506,7 +506,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >コンフィグファイルを作成する</a>
+        <a href="." >主な操作方法</a>
     </h1>
 </div>
 
@@ -521,37 +521,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="コンフィグファイルを作成する">コンフィグファイルを作成する</h1>
-<p>コンフィグファイルを作成することによって利用規約の画像をアプリケーション起動時に表示させたり、企業ロゴを常時表示させることができます。<br>
-※コンフィグファイルはailia DX Insightの初回起動時に選択することができます。<br>
-<img src="img/setup_001.png" alt="setup"><br></p>
+                                <h1 id="主な操作方法">主な操作方法</h1>
+<h2 id="画面構成">画面構成</h2>
+<p>aillia DX insightの主な画面構成</p>
+<p><img src="img/UseAI_01_01.png" alt="useai_01_01.png"></p>
+<ol>
+<li><p>アプリメニュー<br>
+使用したいailia DX insightの機能をカテゴリの中から選ぶことができます。</p>
+</li>
+<li><p>チュートリアル<br>
+ailia DX insightのチュートリアルをいつでもここから確認できます。</p>
+</li>
+<li><p>設定<br>
+アプリに関する各種設定をここから行います。</p>
+</li>
+<li><p>サイドバー<br>
+アプリ中央に表示させるものを選ぶことができます。フォルダのブックマーク機能があり、ファイルアプリ内で使用するファイルを使いやすくまとめることができます。</p>
+</li>
+<li><p>チャットボックス<br>
+AIに質問や、画像生成のプロンプト、翻訳するテキストをここに入力します。何も入力せずに右のマイクをクリックすることで音声入力を行うことができます。</p>
+</li>
+<li><p>ダウンロードステータス<br>
+各種ダウンロードを行う際に進行状況がこちらに表示されます。</p>
+</li>
+<li><p>ステータスバー<br>
+ファイルサイズ、インデックス登録の有無等、選択中のファイルに関する情報を確認することができます。</p>
+</li>
+</ol>
 <p><br></p>
-<h2 id="コンフィグファイルの作成例">コンフィグファイルの作成例</h2>
-<p>コンフィグのファイルフォーマットはjsonで作成してください。</p>
-<pre><code>{
-  &quot;apiKey&quot; : {
-    &quot;openAI&quot;: &quot;YourOpenAIApiKey&quot;
-  },
-  &quot;licenseFile&quot;: &quot;/path/to/license/file&quot;,
-  &quot;terms&quot;: {
-    &quot;image&quot;: &quot;/path/to/terms/image&quot;
-  },
-  &quot;logo&quot;: &quot;path/to/logo/image&quot;
-}
-</code></pre><p><code>&quot;apiKey&quot;</code><br>
-OpenAIのAPIキーをこちらに入力します。<br>
-<code>&quot;licenseFile&quot;</code><br>
-ライセンスファイルへのパスをコンフィグファイルからの相対パスで指定します。<br>
-<code>&quot;terms&quot;</code> <code>&quot;logo&quot;</code><br>
-画像ファイルへのパスをコンフィグファイルからの相対パスで指定します。</p>
-<p>ライセンスファイル以外の項目は省略してもアプリの起動には影響はありません。</p>
-<h2 id="コンフィグファイルの適用">コンフィグファイルの適用</h2>
-<p>ailia DX Insightの初回起動時に「ライセンスファイルもしくはコンフィグファイルを選択してください」というウィンドウが表示されます。フォルダを指定して適用させてください。<br>
-作成したコンフィグファイルは、社内の共有フォルダなどに配置してください。<br>
-<br>
-設定や画像ファイルはローカルにコピーされるため、初期設定以外では共有フォルダへのアクセスは不要です。</p>
-<p><br></p>
-<h4 id="次のページへ ＞"><a href="UseAI.html">次のページへ ＞</a></h4>
+<h4 id="次のページへ ＞"><a href="FileView.html">次のページへ ＞</a></h4>
 
                                 
                                 </section>
@@ -579,12 +577,12 @@ OpenAIのAPIキーをこちらに入力します。<br>
 
             
                 
-                <a href="IndexRegister.html" class="navigation navigation-prev " aria-label="Previous page: ファイルをインデックスに登録する">
+                <a href="SetUp.html" class="navigation navigation-prev " aria-label="Previous page: セットアップ">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="UseAI.html" class="navigation navigation-next " aria-label="Next page: AIを使う">
+                <a href="FileView.html" class="navigation navigation-next " aria-label="Next page: ファイルビューの操作">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -595,7 +593,7 @@ OpenAIのAPIキーをこちらに入力します。<br>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"コンフィグファイルを作成する","level":"2.1.3","depth":2,"next":{"title":"AIを使う","level":"3.1","depth":1,"path":"UseAI.md","ref":"UseAI.md","articles":[{"title":"AIに質問する","level":"3.1.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},{"title":"文書ファイルについて質問する","level":"3.1.2","depth":2,"path":"DocumentFile.md","ref":"DocumentFile.md","articles":[]},{"title":"文書ファイルを要約する","level":"3.1.3","depth":2,"path":"SummarizeDocument.md","ref":"SummarizeDocument.md","articles":[]},{"title":"文書ファイルを翻訳する","level":"3.1.4","depth":2,"path":"Translation.md","ref":"Translation.md","articles":[]},{"title":"画像を検索する","level":"3.1.5","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},{"title":"画像を生成する","level":"3.1.6","depth":2,"path":"GenerateImage.md","ref":"GenerateImage.md","articles":[]},{"title":"議事録を取る","level":"3.1.7","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},{"title":"音声入力を利用する場合","level":"3.1.8","depth":2,"path":"VoiceInput.md","ref":"VoiceInput.md","articles":[]}]},"previous":{"title":"ファイルをインデックスに登録する","level":"2.1.2","depth":2,"path":"IndexRegister.md","ref":"IndexRegister.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"ConfigFile.md","mtime":"2024-06-12T06:45:26.612Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-13T01:06:31.578Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"主な操作方法","level":"2.1","depth":1,"next":{"title":"ファイルビューの操作","level":"2.1.1","depth":2,"path":"FileView.md","ref":"FileView.md","articles":[]},"previous":{"title":"セットアップ","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"articles":[{"title":"ファイルビューの操作","level":"2.1.1","depth":2,"path":"FileView.md","ref":"FileView.md","articles":[]},{"title":"ファイルをインデックスに登録する","level":"2.1.2","depth":2,"path":"IndexRegister.md","ref":"IndexRegister.md","articles":[]},{"title":"コンフィグファイルを作成する","level":"2.1.3","depth":2,"path":"ConfigFile.md","ref":"ConfigFile.md","articles":[]}],"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"MainOperation.md","mtime":"2024-06-13T01:01:37.264Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-13T01:06:31.578Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
