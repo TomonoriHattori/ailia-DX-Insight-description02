@@ -17,12 +17,14 @@
 }
 
 .page-inner {
-  max-width: 80% !important; 
-  width: 70% !important;
+  max-width: fit-content;
+  min-width: 300px;
+  overflow-x: scroll;
 }
 
 body{
   font-size: 18px;
+  width: 100%;
 }
 
 .markdown-section h1, 
@@ -105,4 +107,10 @@ body{
 
 svg {
 	vertical-align: -3px;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  width: 1080px;
 }
