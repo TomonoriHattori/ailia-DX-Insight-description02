@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
+
 .book.font-family-0 {
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
@@ -16,16 +17,25 @@
   line-height: 1.5em;
 }
 
-.page-inner {
-  max-width: fit-content;
-  min-width: 300px;
-  overflow-x: scroll;
+@media screen and (min-width: 481px){
+  .page-inner {
+    max-width: 80%;
+    overflow-x: scroll;
+  }
 }
+@media screen and (max-width: 480px){
+  .page-inner {
+    max-width: fit-content;
+    overflow-x: scroll;
+  }
+}
+
 
 body{
   font-size: 18px;
   width: 100%;
 }
+
 
 .markdown-section h1, 
 .markdown-section h2, 
@@ -61,6 +71,7 @@ body{
   color: #00BBE0;/*文字色*/
 }
 
+@media screen and (min-width: 481px){
 .markdown-section h5 a {
   font-size: 24px;
   line-height: 1.5em;
@@ -77,6 +88,28 @@ body{
 	border-radius: 100vh;
 	transition: 0.5s;
 }
+}
+
+@media screen and (max-width: 480px){
+  .markdown-section h5 a {
+    font-size: 12px;
+    line-height: 1.5em;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    width: auto;
+    margin: auto;
+    padding: 1em 4em;
+    font-weight: bold;
+    border: 2px solid #00BBE0;
+    color: #00BBE0;
+    border-radius: 100vh;
+    transition: 0.5s;
+  }
+  }
+
+
 
 .markdown-section h5 a:hover {
   color: #fff;
@@ -112,5 +145,4 @@ svg {
 table {
   display: block;
   overflow-x: auto;
-  width: 1080px;
 }
