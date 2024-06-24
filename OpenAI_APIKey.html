@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>議事録を取る · ailia DX Insight</title>
+        <title>OpenAI APIキーの取得 · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -52,10 +52,10 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="VoiceInput.html" />
+    <link rel="next" href="Pricing.html" />
     
     
-    <link rel="prev" href="GenerateImage.html" />
+    <link rel="prev" href="Gemini.html" />
     
 
     </head>
@@ -287,7 +287,7 @@
       
       </li>
       
-      <li class="chapter active" data-level="3.1.7" data-path="Recording.html">
+      <li class="chapter " data-level="3.1.7" data-path="Recording.html">
       
         <a href="Recording.html">
       
@@ -435,7 +435,7 @@
       
       
       
-      <li class="chapter " data-level="5.1" data-path="OpenAI_APIKey.html">
+      <li class="chapter active" data-level="5.1" data-path="OpenAI_APIKey.html">
       
         <a href="OpenAI_APIKey.html">
       
@@ -547,7 +547,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >議事録を取る</a>
+        <a href="." >OpenAI APIキーの取得</a>
     </h1>
 </div>
 
@@ -562,29 +562,54 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="議事録を取る">議事録を取る</h1>
-<p>音声認識AIによって、手を動かすことなく議事録を取ることができます。</p>
+                                <h1 id="openai-apiキーの取得方法">OpenAI APIキーの取得方法</h1>
+<p>「ailia DX insight」内でOpenAIの機能を使用する場合にはOpenAIのAPIキーの取得が必要となります。</p>
+<h2 id="openaiアカウントを作成する">OpenAIアカウントを作成する</h2>
 <ol>
-<li>画面左上のアプリメニューから「議事録作成」をクリックし、議事録画面を開きます。<br>
-<img src="img/UseAI_18.png" alt="useai_18.png"><br></li>
-<li>画面右上の「場所を入力」に会議場所を入力します。会議名を変更することもできます。<br>
-<img src="img/UseAI_19.png" alt="useai_19.png"><br></li>
-<li>画面下部の「記録を開始」ボタンをクリックし、議事録の記録を開始します。<br>
-<img src="img/UseAI_20.png" alt="useai_20.png"><br></li>
-<li><a href="VoiceInput.html">音声認識に必要なAIモデルのダウンロード</a>がお済みでない場合は、ダウンロードが開始されます。 ダウンロード完了後より利用可能となります。</li>
-<li>記録を終えるタイミングで、画面下部の「記録を停止」ボタンをクリックし、議事録を保存します。<br>
-<img src="img/UseAI_21.png" alt="useai_21.png"><br>
-<br></li>
+<li><a href="https://platform.openai.com/docs/overview" target="_blank">OpenAI Platform</a>から「Sign up」を選択します。<br>
+<img src="img/API_key_01.png" alt="API_key_01"><br></li>
+<li>案内に沿ってメールアドレス、パスワードを入力し、続けるを選択します。<br>
+<img src="img/API_key_02.png" alt="API_key_02"><br></li>
+<li>登録したメールアドレス宛に「OpenAI - Verify your email」という件名のメールが届くので、メールアドレスの確認を選択すると、ブラウザが起動します。<br>
+<img src="img/API_key_03.png" alt="API_key_03"><br></li>
+<li>起動されたブラウザで「氏名」「組織名（オプション）」「生年月日」を入力し、規約、プライバシーポリシーを確認後、同意するを選択します。<br>
+<img src="img/API_key_04.png" alt="API_key_04"><br></li>
 </ol>
-<h2 id="記録した議事録を確認する">記録した議事録を確認する</h2>
-<p>議事録画面の左側に並ぶ議事録をクリックすると、記録した議事録を見ることができます。<br>
-<img src="img/UseAI_22.png" alt="useai_22.png"><br>
-記録された文の右側にあるボタンをクリックすると、文の訂正ができます。<br>
-<img src="img/UseAI_23.png" alt="useai_23.png"><br>
-また、画面下部の「記録を開始」ボタンをクリックすることで、再度議事録を記録することができます。</p>
-<p><br></p>
-<h4 id="次のページへ ＞"><a href="VoiceInput.html">次のページへ ＞</a></h4>
-<h4 id="一覧に戻る"><a href="UseAI.html">一覧に戻る</a></h4>
+<h2 id="電話番号を登録する">電話番号を登録する</h2>
+<p>APIキーを取得するにはショートメッセージを受け取ることのできる電話番号の登録が必要となります。</p>
+<ol>
+<li>OpenAIのDocsページ右上の「Dashboard」を選択します。<br>
+<img src="img/API_key_05.png" alt="API_key_05"><br></li>
+<li>左側のメニューから「API keys」を選択して、「Verify your phone number to create an API key」という案内の横にある「Start varification」を選択します。<br>
+<img src="img/API_key_06.png" alt="API_key_06"><br></li>
+<li>電話番号を入力し、「Send code」を選択します。<br>
+<img src="img/API_key_07.png" alt="API_key_07"><br></li>
+<li>電話番号宛てにOpenAI認証コードがショートメッセージが届くので、次の画面で入力し、電話番号の登録が完了となります。<br>
+<img src="img/API_key_08.png" alt="API_key_08"><br></li>
+</ol>
+<h2 id="apiキーを登録する">APIキーを登録する</h2>
+<ol>
+<li>「+ Create new secret key」を選択します。<br>
+<img src="img/API_key_09.png" alt="API_key_09"><br></li>
+<li>「Create new secret key」のウィンドウが表示されるので、任意の名称を入力してAPIキーを生成します。<br>
+<img src="img/API_key_10.png" alt="API_key_10"><br></li>
+<li>APIキーが表示されます。<br>
+※生成されたAPIキーが表示されるのは一度きりとなるので、この時点でコピーして保存しておくことをお勧めします。<br> 
+<img src="img/API_key_11.png" alt="API_key_11"><br></li>
+</ol>
+<h2 id="支払い情報を登録する">支払い情報を登録する</h2>
+<ol>
+<li>OpenAIのホーム画面右上のご自身のアカウントのアイコンをクリックし、「Your profile」を選択します。<br>　
+<img src="img/API_key_12.png" alt="API_key_12"><br></li>
+<li>Settingsという画面になります。左のメニューから「Billing」を選択し、「Add payment details」を選択します。<br>
+<img src="img/API_key_13.png" alt="API_key_13"><br></li>
+<li>「What best describes you?」（あなたに当てはまるものを選択してください）というウィンドウが表示されます。「individual」（個人）か「Company」（会社）を選択します。<br> 
+<img src="img/API_key_14.png" alt="API_key_14"><br></li>
+<li>表示されるウィンドウにてカード情報/請求先住所を入力し、「Continue」を選択することで、支払い情報の登録が完了します。<br>
+<img src="img/API_key_15.png" alt="API_key_15"><br></li>
+<li><a href="Pricing.html">月の支払い限度額を設定</a>することで、APIにかかる費用を管理することができます。</li>
+</ol>
+<h4 id="次のページへ ＞"><a href="Pricing.html">次のページへ ＞</a></h4>
 
                                 
                                 </section>
@@ -612,12 +637,12 @@
 
             
                 
-                <a href="GenerateImage.html" class="navigation navigation-prev " aria-label="Previous page: 画像を生成する">
+                <a href="Gemini.html" class="navigation navigation-prev " aria-label="Previous page: Gemini">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="VoiceInput.html" class="navigation navigation-next " aria-label="Next page: 音声入力を利用する場合">
+                <a href="Pricing.html" class="navigation navigation-next " aria-label="Next page: OpenAIの料金体系">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -628,7 +653,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"議事録を取る","level":"3.1.7","depth":2,"next":{"title":"音声入力を利用する場合","level":"3.1.8","depth":2,"path":"VoiceInput.md","ref":"VoiceInput.md","articles":[]},"previous":{"title":"画像を生成する","level":"3.1.6","depth":2,"path":"GenerateImage.md","ref":"GenerateImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"Recording.md","mtime":"2024-06-12T06:48:39.062Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-24T10:03:29.474Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OpenAI APIキーの取得","level":"5.1","depth":1,"next":{"title":"OpenAIの料金体系","level":"5.2","depth":1,"path":"Pricing.md","ref":"Pricing.md","articles":[]},"previous":{"title":"Gemini","level":"4.1.5","depth":2,"path":"Gemini.md","ref":"Gemini.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"OpenAI_APIKey.md","mtime":"2024-06-24T09:53:02.083Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-24T10:03:29.474Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
