@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>エンベディングについて · ailia DX Insight</title>
+        <title>Ollamaを使用したカスタムLLM構築 · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -608,7 +608,7 @@
                 
             </li>
         
-            <li class="chapter " data-level="4.1.1.3" data-path="CustomLLM_Ollama.html">
+            <li class="chapter active" data-level="4.1.1.3" data-path="CustomLLM_Ollama.html">
                 
                     <a href="CustomLLM_Ollama.html">
                 
@@ -676,7 +676,7 @@
                 
             </li>
         
-            <li class="chapter active" data-level="4.1.3" data-path="Embedding.html">
+            <li class="chapter " data-level="4.1.3" data-path="Embedding.html">
                 
                     <a href="Embedding.html">
                 
@@ -894,7 +894,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >エンベディングについて</a>
+        <a href="." >Ollamaを使用したカスタムLLM構築</a>
     </h1>
 </div>
 
@@ -909,13 +909,82 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="エンベディングとは">エンベディングとは</h1>
-<p>エンベディング（Embedding）とはチャンクのテキストをベクトルデータに変換する技術です。
-ベクトル間の距離を計算することで、テキストとテキストの意味が近いかを判定可能です。
-RAGでは、質問文のテキストのベクトルと、チャンクのベクトルの距離を計測することで、質問文に近いチャンクを検索します。</p>
-<p><img src="img/Embedding_01.png" alt="Embedding_01.png"></p>
+                                <h1 id="ollamaを使用したカスタムllm構築">Ollamaを使用したカスタムLLM構築</h1>
+<h2 id="ollamaのインストール">Ollamaのインストール</h2>
+<p><a href="https://ollama.com" target="_blank">https://ollama.com</a>よりOllamaをインストールしてください。<br>
+<img src="img/CustomLLM_10.png" alt="CustomLLM_10"><br></p>
+<h2 id="ollamaの起動（windows）">Ollamaの起動（Windows）</h2>
+<ol>
+<li><p>インストールした「OllamaSetup.exe」を起動し、インストールをします。<br>
+<img src="img/CustomLLM_11.png" alt="CustomLLM_11"><br></p>
+</li>
+<li><p>インストールが完了したら、コマンドプロンプトを起動してパスが通っていることを確認します。<br>
+コマンドプロンプトで<code>ollama --help</code>を実行し、次のようなヘルプ画面が表示されることを確認してください。<br></p>
+</li>
+</ol>
+<pre><code>Large language model runner
+
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model from a Modelfile
+  show        Show information for a model
+  run         Run a model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+
+Flags:
+  -h, --help      help for ollama
+  -v, --version   Show version information
+
+Use &quot;ollama [command] --help&quot; for more information about a command.
+</code></pre><h2 id="llmのダウンロード">LLMのダウンロード</h2>
+<ol>
+<li><p>ローカルで動かしたいLLMを<code>ollama pull</code>のコマンドでダウンロードします。
+例：Googleのgemma-2-9Bをダウンロードする場合、コマンドプロンプトに<code>ollama pull gemma2</code>と入力します。<br>
+<img src="img/CustomLLM_12.png" alt="CustomLLM_12"><br></p>
+<ul>
+<li>他のPCからもこのローカルLLMにアクセスしたい場合はコマンドプロンプトで<code>set OLLAMA_HOST=0.0.0.0</code>を実行し、OLLAMA_HOSTの環境を「0.0.0.0」に設定します。</li>
+</ul>
+</li>
+<li><p>コマンドプロンプトで<code>ollama serve</code>を実行することでLLMを起動させます。<br>
+<img src="img/CustomLLM_14.png" alt="CustomLLM_14"><br></p>
+<ul>
+<li>「Listening on [::]:11434」と表示されている場合は他のPCからもアクセス可能です。</li>
+<li>「Listening on 127.0.0.1:11434」の場合はそのPC内からのみアクセスできます。
+ここの「11434」の数値がポート番号となり、aillia DX Insight内での設定に使用します。</li>
+</ul>
+</li>
+</ol>
+<h2 id="aillia-dx-insightでカスタムllmの登録">aillia DX InsightでカスタムLLMの登録</h2>
+<p>詳しい設定画面の呼び出し方は<a href="CustomLLM.html">こちら</a>をご参照ください。<br>
+<img src="img/CustomLLM_02_03.png" alt="CustomLLM_02_03.png"><br></p>
+<ul>
+<li>名前：使用するLLMの名称 (UI表示にのみ使用するため何でも構わない)</li>
+<li>説明：必要に応じてメモとして使用</li>
+<li>モデル：ダウンロードしたモデルの名称（今回の例ではgemma2）</li>
+<li>URL(*)：<code>ollama serve</code>で表示されたポートのURL（今回の例では<a href="http://localhost:11434）" target="_blank">http://localhost:11434）</a></li>
+<li>最大トークン長：gemma-2-9Bの場合、「8192」となります。
+<br></li>
+</ul>
+<p>(*)未記入の場合、HTTPの接続エラーになります。<br></p>
+<h2 id="ダウンロードしたllmの削除">ダウンロードしたLLMの削除</h2>
+<p>LLMが容量を圧迫する場合や、間違えたモデルをダウンロードしてしまった場合、以下の手順でLLMを削除することができます。</p>
+<ol>
+<li>コマンドプロンプトで<code>ollama list</code>を実行すると、ダウンロード済みのモデルが一覧で表示されます。</li>
+<li>コマンドプロンプトで<code>ollama rm モデル名</code>を実行することでダウンロード済みのモデルを削除をすることができます。<br>
+<img src="img/CustomLLM_13.png" alt="CustomLLM_13.png"><br></li>
+</ol>
 <p><br></p>
-<h4 id="次のページへ ＞"><a href="AzureOpenAI.html">次のページへ ＞</a></h4>
+<h4 id="次のページへ ＞"><a href="CustomLLM_FastChat.html">次のページへ ＞</a></h4>
 
                                 
                                 </section>
@@ -943,12 +1012,12 @@ RAGでは、質問文のテキストのベクトルと、チャンクのベク�
 
             
                 
-                <a href="RAG.html" class="navigation navigation-prev " aria-label="Previous page: RAGによる回答精度の向上">
+                <a href="CustomLLM_LMstudio.html" class="navigation navigation-prev " aria-label="Previous page: LMスタジオを使用したカスタムLLM構築">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="AzureOpenAI.html" class="navigation navigation-next " aria-label="Next page: Azure OpenAI Service">
+                <a href="CustomLLM_FastChat.html" class="navigation navigation-next " aria-label="Next page: FastChatを使用したカスタムLLM構築">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -959,7 +1028,7 @@ RAGでは、質問文のテキストのベクトルと、チャンクのベク�
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"エンベディングについて","level":"4.1.3","depth":2,"next":{"title":"Azure OpenAI Service","level":"4.1.4","depth":2,"path":"AzureOpenAI.md","ref":"AzureOpenAI.md","articles":[]},"previous":{"title":"RAGによる回答精度の向上","level":"4.1.2","depth":2,"path":"RAG.md","ref":"RAG.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"Embedding.md","mtime":"2024-06-12T06:45:26.611Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-07-09T08:58:27.918Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ollamaを使用したカスタムLLM構築","level":"4.1.1.3","depth":3,"next":{"title":"FastChatを使用したカスタムLLM構築","level":"4.1.1.4","depth":3,"path":"CustomLLM_FastChat.md","ref":"CustomLLM_FastChat.md","articles":[]},"previous":{"title":"LMスタジオを使用したカスタムLLM構築","level":"4.1.1.2","depth":3,"path":"CustomLLM_LMstudio.md","ref":"CustomLLM_LMstudio.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"CustomLLM_Ollama.md","mtime":"2024-07-09T08:56:19.531Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-07-09T08:58:27.918Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
