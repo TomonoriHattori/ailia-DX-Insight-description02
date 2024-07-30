@@ -186,7 +186,7 @@ table {
   display: inline-block;
   padding: 5px 20px;
   font-size: 12px;
-  line-height: 1;
+  line-height: 2em;
 }
 .news-list .item .title{
   margin: 0;
