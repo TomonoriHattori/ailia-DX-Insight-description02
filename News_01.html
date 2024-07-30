@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>文書ファイルを翻訳する · ailia DX Insight</title>
+        <title>アップデートガイド</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -44,16 +44,18 @@
         
     
     
-        <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="overview.html" />
+    <link rel="next" href="SetUp.html" />
     
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -68,20 +70,20 @@
 </div>
 
             
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
+    <nav role="navigation">
     
 
-    
 
-    
-        
-        
-    
+      <ul class="summary">
+
+
+
+
+
+
+
+
+
         <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
@@ -411,7 +413,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.4" data-path="Translation.html">
+        <li class="chapter " data-level="3.1.4" data-path="Translation.html">
             
                 <a href="Translation.html">
             
@@ -890,7 +892,7 @@
 </ul>
 
 
-                </nav>
+    </nav>
             
         
     </div>
@@ -907,7 +909,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >文書ファイルを翻訳する</a>
+        <a href="." >アップデートガイド</a>
     </h1>
 </div>
 
@@ -920,38 +922,30 @@
 <div id="book-search-results">
     <div class="search-noresults">
     
-        <section class="normal markdown-section">
+<section class="normal markdown-section">
+
+  <h1>ailia DX Insight 1.0から1.1へのアップデートガイド</h1>
+  <p>ailia DX Insight 1.1では、アプリケーションの電子証明書が更新されています。 Microsoftのインストーラであるmsixでは、電子証明書が更新された場合、別のアプリケーションとして認識されます。 （参考情報：<a target="_blank" href="https://github.com/microsoft/msix-packaging/issues/365"></a>https://github.com/microsoft/msix-packaging/issues/365</a>） そのため、ailia DX Insight 1.0から1.1にアップデートする場合、下記の手順に従い、旧バージョンをアンインストール後にインストールを行なってください。<br>
+  
+
+  <h2>windowsの場合</h2>
+  <p>スタートメニューからailia_dx_insightを選択し、右クリックでアンインストールを行います。
+    （スタートメニューの中に見当たらない場合は「すべてのアプリ」の中からお探しください）</p>
+  <p><img src="img/UpdateGuide_01.png" alt="UpdateGuide_01.png"></p>
+  <p>ailia_dx_insight.msixをダブルクリックし、インストールを行います。</p>
+  <p><img src="img/UpdateGuide_02.png" alt="UpdateGuide_02.png"></p>
+  <p>ユーザデータはc:/Users/[UserName]/Documents(*)/ailia DX Insightに保存されているため、保持されます。</p>
+
+  <p>（*）「マイドキュメント」と表示されることもあります。</p>
+
+  <h2>Macの場合</h2>
+  <p>ailia_dx_insight.dmgを開き、ailia_dx_insight.appをApplicationフォルダにドロップすることで上書きします。</p>
+
+  <p><br></p>
+  <h4><a href="index.html">HOMEに戻る</a></h4>
+
                                 
-            <h1 id="文書ファイルを翻訳する">文書ファイルを翻訳する</h1>
-<p>文書ファイルをインデックスに登録すると、登録した文書ファイルをAI機能によって翻訳することができます。
-画面中央下のチャットボックスに文書を直接入力することで、その文書を翻訳することもできます。</p>
-<p>ファイルをインデックス登録する方法については<a href="IndexRegister.html">こちら</a>をご確認ください。</p>
-<ol>
-<li>画面左上のアプリメニューから「テキスト翻訳」を選択します。<br>
-<img src="img/UseAI_10.png" alt="useai_10.png"><br></li>
-<li>翻訳したいファイルを右クリックし、「翻訳」をクリックします。 対応しているファイルフォーマットはpdf, txt, md, docx, xlsx,です。<br>
-<img src="img/UseAI_12.png" alt="useai_12.png"><br></li>
-<li>AIが翻訳した結果が表示されます。翻訳結果の右下にある「保存」ボタンを押すと、翻訳結果をファイルとして保存することができます。 
-<br></li>
-<li>PDFファイルは翻訳をすると、PDFのまま出力することができます。(*1)<br>
-<br>
-<img src="img/UseAI_12_02.png" alt="useai_12_02.png"><br></li>
-</ol>
-<h2 id="文章を翻訳する">文章を翻訳する</h2>
-<p>日本語で書かれた文章は英語へ、日本語以外の言語で書かれた文は日本語へ翻訳されます。</p>
-<ol>
-<li>画面左上のアプリメニューから「テキスト翻訳」を選択します。<br>
-<img src="img/UseAI_10.png" alt="useai_10.png"><br></li>
-<li>翻訳したい文書を画面中央下のチャットボックスに入力し、送信します。</li>
-<li>AIが翻訳した結果が表示されます。</li>
-</ol>
-<p><br>
-(*1)なお、PDFは非常に複雑な構造を持っており、ailia DX Insightの内部でレイアウトを推定しています。PDFの種類によっては、翻訳後のレイアウトが崩れる場合があります。</p>
-<p><br></p>
-<h4 id="次のページへ ＞"><a href="SearchImage.html">次のページへ ＞</a></h4>
-<h4 id="一覧に戻る"><a href="UseAI.html">一覧に戻る</a></h4>
-                                
-                                </section>
+</section>
                             
     </div>
     <div class="search-results">
@@ -976,14 +970,6 @@
 
             
                 
-                <a href="SummarizeDocument.html" class="navigation navigation-prev " aria-label="Previous page: 文書ファイルを要約する">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="SearchImage.html" class="navigation navigation-next " aria-label="Next page: 画像を検索する">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -992,7 +978,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"文書ファイルを翻訳する","level":"3.1.4","depth":2,"next":{"title":"画像を検索する","level":"3.1.5","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"previous":{"title":"文書ファイルを要約する","level":"3.1.3","depth":2,"path":"SummarizeDocument.md","ref":"SummarizeDocument.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"Translation.md","mtime":"2024-06-12T06:45:26.275Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-07-09T08:58:27.918Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"概要","level":"1.2","depth":1,"next":{"title":"セットアップ","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"previous":{"title":"イントロダクション","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"overview.md","mtime":"2024-06-17T11:47:28.063Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-07-30T10:50:41.141Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
