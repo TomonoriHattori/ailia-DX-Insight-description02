@@ -602,14 +602,7 @@
                                 
                                             <h1 id="弊社推奨llm">弊社推奨LLM</h1>
                                             <p>GPUメモリ8GB未満～8GBのPCをご利用になる場合に推奨するLLMの一覧です。</p>
-                                            <h2 id="推奨llm一覧">推奨LLM一覧</h2>
-                                            <h3 id="microsoftphi-3-mini-4k-instruct-gguf">microsoft/Phi-3-mini-4k-instruct-gguf</h3>
-                                            <h3 id="quantfactoryphi-3-mini-128k-instruct-gguf">QuantFactory/Phi-3-mini-128k-instruct-GGUF</h3>
-                                            <p>特徴：
-                                            Microsoft社が提供するLLMとなっております。3.8B（38 億個のパラメータ）という非常に小型なモデルながら、
-                                            2倍以上大きいモデルと同等の性能を有しています。
-                                            現在、4Kトークンと128Kトークンに対応した2つのモデルが公開されています。</p>
-                                            <p><br></p>
+                                            <h2 id="超小型（05b-～-4b）">超小型（0.5B ～ 4B）</h2>
                                             <h3 id="qwenqwen2-05b--instruct-gguf">Qwen/Qwen2-0.5B -Instruct-GGUF</h3>
                                             <h3 id="qwenqwen2-7b-instruct-gguf">Qwen/Qwen2-7B-Instruct-GGUF</h3>
                                             <p>特徴：
@@ -617,6 +610,23 @@
                                             英語と中国語に加えて27の言語での学習データを活用し、自然言語理解、知識獲得、コーディング、数学、多言語対応などのベンチマークで高いパフォーマンスを示しています。
                                             0.5Bと非常に小さなモデルですので、知識量は少ないですが低スペックのPCで使用する際に最適です。</p>
                                             <p><br></p>
+                                            <h3 id="lmstudio-communitygemma-2-9b-it-gguf">lmstudio-community/gemma-2-9b-it-GGUF</h3>
+                                            <h3 id="bartowskigemma-2-2b-it-gguf">bartowski/gemma-2-2b-it-GGUF</h3>
+                                            <p>特徴：
+                                            Gemma2は、Googleの最先端のAIモデルであるGeminiと同じアーキテクチャを用いて構築されており、
+                                            軽量でありながら高い性能を発揮します。特に270億パラメータモデルは、そのサイズクラスで最高の性能を発揮し、
+                                            2倍以上の規模のモデルに匹敵する性能を実現しています。また、90億パラメータモデルも、
+                                            同サイズの他のオープンモデルを上回る優れた性能を示しています。
+                                            また、20億パラメータモデルはサイズに対してクラス最高のパフォーマンスとなりノートPC等での活用に適します。</p>
+                                            <p><br></p>
+                                            <h3 id="microsoftphi-3-mini-4k-instruct-gguf">microsoft/Phi-3-mini-4k-instruct-gguf</h3>
+                                            <h3 id="quantfactoryphi-3-mini-128k-instruct-gguf">QuantFactory/Phi-3-mini-128k-instruct-GGUF</h3>
+                                            <p>特徴：
+                                            Microsoft社が提供するLLMとなっております。3.8B（38 億個のパラメータ）という非常に小型なモデルながら、
+                                            2倍以上大きいモデルと同等の性能を有しています。
+                                            現在、4Kトークンと128Kトークンに対応した2つのモデルが公開されています。</p>
+                                            <p><br></p>
+                                            <h2 id="小型（7b-～-9b）">小型（7B ～ 9B）</h2>
                                             <h3 id="mmngaumiyuki-umievo-itr012-gleipnir-7b-gguf">mmnga/umiyuki-Umievo-itr012-Gleipnir-7B-gguf</h3>
                                             <p>特徴：
                                             Japanese-Starling-ChatV-7B、Ninja-v1-RP-expressive-v2、Vecteus-v1、Japanese-Chat-Umievo-itr004-7b4
@@ -630,15 +640,6 @@
                                             日本語での性能が高く、会話の品質においても高評価を得ています。
                                             「ArrowPro-7B-KillerWhale」は「DataPilot/ArrowPro-7B-KUJIRA」の強化版という位置づけです。</p>
                                             <p><br></p>
-                                            <h3 id="lmstudio-communitygemma-2-9b-it-gguf">lmstudio-community/gemma-2-9b-it-GGUF</h3>
-                                            <h3 id="bartowskigemma-2-2b-it-gguf">bartowski/gemma-2-2b-it-GGUF</h3>
-                                            <p>特徴：
-                                            Gemma2は、Googleの最先端のAIモデルであるGeminiと同じアーキテクチャを用いて構築されており、
-                                            軽量でありながら高い性能を発揮します。特に270億パラメータモデルは、そのサイズクラスで最高の性能を発揮し、
-                                            2倍以上の規模のモデルに匹敵する性能を実現しています。また、90億パラメータモデルも、
-                                            同サイズの他のオープンモデルを上回る優れた性能を示しています。
-                                            また、20億パラメータモデルはサイズに対してクラス最高のパフォーマンスとなりノートPC等での活用に適します。</p>
-                                            <p><br></p>
                                             <h3 id="mmngallama-31-8b-instruct-gguf">mmnga/Llama-3.1-8B-Instruct-gguf</h3>
                                             <p>特徴：
                                             Meta社が提供するこれまでで最も先進的かつ高性能なLLMとなっております。
@@ -651,6 +652,7 @@
                                             日本語の文法、語彙、文化的背景に精通しており、日本語特有の表現やニュアンスを正確に理解し、
                                             洗練された日本語文章を生成することができます。</p>
                                             <p><br></p>
+                                            <h2 id="中型（それ以上）">中型（それ以上）</h2>
                                             <h3 id="mmngaelyza-japanese-llama-2-13b-fast-instruct-gguf">mmnga/ELYZA-japanese-Llama-2-13b-fast-instruct-gguf</h3>
                                             <p>特徴：
                                             東大松尾研究室発のAIカンパニー株式会社ELYZA(イライザ)が提供する日本語に特化したLLMとなっております。
@@ -694,11 +696,13 @@
                                             Meta社が提供するこれまでで最も先進的かつ高性能なLLMとなっております。
                                             Llama 3.1は128Kのコンテキスト長、最先端のツール使用、推論機能の強化により、長文テキストの要約、
                                             多言語会話エージェント、コーディング支援などの高度なユースケースをサポートしています。</p>
+                                            <p><br></p>
                                             <h2 id="弊社推奨llmについての補足">弊社推奨LLMについての補足</h2>
                                             <p>推奨LLMをLMスタジオで検索いただくと、以下のように、多くのモデルが表示されるかと思います。<br>
                                             弊社では、サイズと性能のバランスに優れた4ビット量子化モデルの利用を推奨させていただいております。<br>
                                             ※具体的にはQ4_K_Mの記載のあるもの、またはそれに近しい量子化がされているものとなります。<br>
                                             <img src="img/CustomLLM_15.png" alt="CustomLLM_15"><br></p>
+                                            <p><br></p>
                                             <h2 id="linuxサーバーでlmスタジオを動作させる場合">LinuxサーバーでLMスタジオを動作させる場合</h2>
                                             <p>LinuxサーバーでLMスタジオを動作させてailia DX insightから接続しようとした際に以下のようなエラーが表示された際はLinuxサーバーのファイヤーウォール設定でポートへのアクセスが禁止されている可能性があります。<br>
                                             <img src="img/CustomLLM_16.png" alt="CustomLLM_16.png"><br>
