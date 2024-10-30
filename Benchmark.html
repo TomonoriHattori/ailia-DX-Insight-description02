@@ -676,7 +676,7 @@
                                         <li>設定<img src="img/icon_gear.png" alt="gear">の「AI実行環境」の項目を選択します。<br>
                                         <img src="img/benchmark_01.png" alt="benchmark_01"><br></li>
                                         <li>実行環境を選択します。<br>
-                                        現在設定しているLLMがFP16対応モデルの場合は上の「実行環境（FP16対応モデル）」、現在設定しているLLMがFP16非対応モデルの場合は下の「実行環境（FP16非対応モデル）」の項目を変更してください。<br>（現在使用中のモデルのFP対応が不明の場合は、どちらも変更することでailia DX Insightが自動で判断し、結果を計測結果を返します）<br>
+                                            画像検索および音声検索のクエリ処理、リランクはFP16に非対応のモデルです。それ以外の、文章登録、画像登録、音声登録、OCR、音声認識のモデルはFP16に対応しています。ベンチマーク対象のモデルはすべてFP16モデルとなっています。そのため、上の「実行環境（FP16対応モデル）」の項目を変更してください。<br>
                                         <img src="img/benchmark_02.png" alt="benchmark_02"><br>
                                         GPUとCPUの選択肢が表示されるので、生成時に使用するものを選択します。<br>
                                         <img src="img/benchmark_03.png" alt="benchmark_03"><br></li>
