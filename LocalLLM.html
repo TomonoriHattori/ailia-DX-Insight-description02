@@ -284,6 +284,17 @@
                                     
                                 </li>
 
+                                <li class="chapter " data-level="3.1.6" data-path="Proofread.html">
+            
+                                    <a href="Proofread.html">
+                                
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M544-144 375-314l51-51 118 119 221-221 51 51-272 272ZM144-384l180-480h86l180 480h-83l-42-123H271l-44 123h-83Zm152-192h143l-70-199h-4l-69 199Z"/></svg>
+                                        文書ファイルを校正する
+                                
+                                    </a>
+                                
+                                </li>
+
                                 <li class="chapter " data-level="3.1.6" data-path="SearchImage.html">
                                     
                                     <a href="SearchImage.html">
@@ -677,9 +688,21 @@
                                         </ol>
                                         <p><img src="img/localLLM01.png" alt="localLLM01"></p>
                                         <ol>
-                                        <li>ローカルLLMモデル登録用ウィンドウが開きます。各項目を記入します。<br>「local LLM モデルタイプ」の項目を「GGUF model」に変更することで、「GGUF モデルパス」の項目が表示されます。</li>
+                                        <li>ローカルLLMモデル登録用ウィンドウが開きます。まずはじめに「Locakl LLM モデルタイプ」の項目を選択します。<br>
+                                        <img src="img/localLLM03.png" alt="localLLM03"><br></li>
                                         </ol>
-                                        <p><img src="img/localLLM02.png" alt="localLLM02"></p>
+                                        <h3 id="規定のllmから選択する">規定のLLMから選択する</h3>
+                                        <p>規定のLLMから指定をするだけで、ローカルモデルをダウンロードをすることができます。<br>
+                                        ailia DX Insightでは「gemma2 2b / gemma2 9b」の二つから選択可能です。<br>
+                                        LLMを選択すると、名前と最大トークン長が自動で入力されます。（説明の項目は必要に応じて任意で入力してください）<br>
+                                        <img src="img/localLLM04.png" alt="localLLM04"><br></p>
+                                        <p>右下の完了をクリックすると、「モデルのダウンロードを開始します。」というメッセージウィンドウが表示され、「はい」を選択すると、ダウンロードが開始されます。<br>
+                                        <img src="img/localLLM05.png" alt="localLLM05"><br></p>
+                                        <h3 id="ggufファイルを使用する">GGUFファイルを使用する</h3>
+                                        <p>「local LLM モデルタイプ」の項目を「GGUF model」に変更することで、「GGUF モデルパス」の項目が表示されます。
+                                        <img src="img/localLLM06.png" alt="localLLM06"><br></p>
+                                        <p>各項目を入力します。<br>
+                                        <img src="img/localLLM02.png" alt="localLLM02"><br></p>
                                         <ul>
                                         <li>名前：使用するLLMの名称 (UI表示にのみ使用するため何でも構わない)</li>
                                         <li>説明：必要に応じてメモとして使用</li>
