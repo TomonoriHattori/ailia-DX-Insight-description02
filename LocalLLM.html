@@ -724,7 +724,7 @@
                                         <p>ローカルLLMを実行するために必要なPC条件は下記となります。</p>
                                         <h3 id="windowsの場合">Windowsの場合</h3>
                                         <ul>
-                                            <li>2bモデルの動作条件<pre><code>GPU実行：Vulkan 1.1以降に対応したVRAMを4GB以上搭載したGPU<br>実行：AVX2に対応した搭載したCPU、8GB以上のメモリ</code></pre></li>
+                                            <li>2bモデルの動作条件<pre><code>GPU実行：Vulkan 1.1以降に対応したVRAMを4GB以上搭載したGPU<br>実行：AVX2に対応したCPU、8GB以上のメモリ</code></pre></li>
                                             <li>9bモデルの動作条件<pre><code>GPU実行：Vulkan 1.1以降に対応したVRAMを6GB以上搭載したGPU<br>CPU実行：AVX2に対応したCPU、8GB以上のメモリ</code></pre></li>
                                         </ul>
                                         <h3 id="macosの場合">MacOSの場合</h3>
@@ -734,11 +734,11 @@
                                         </ul>
                                         <h2 id="ailia-dx-insight内でのローカルllmの構築">ailia DX Insight内でのローカルLLMの構築</h2>
                                         <ol>
-                                        <li>設定<img src="img/icon_gear.png" alt="gear">の中のチャットAIの項目を選択し、「ローカル（ailiaLLM）」の「+追加」を選択します。</li>
+                                        <li>設定<img src="img/icon_gear.png" alt="gear">の中のチャットAIの項目を選択し、「ローカル（ailia LLM）」の「+追加」を選択します。</li>
                                         </ol>
                                         <p><img src="img/localLLM01.png" alt="localLLM01"></p>
                                         <ol>
-                                        <li>ローカルLLMモデル登録用ウィンドウが開きます。まずはじめに「Locakl LLM モデルタイプ」の項目を選択します。<br>
+                                        <li>ローカルLLMモデル登録用ウィンドウが開きます。まずはじめに「Local LLM モデルタイプ」の項目を選択します。<br>
                                         <img src="img/localLLM03.png" alt="localLLM03"><br></li>
                                         </ol>
                                         <h3 id="規定のllmから選択する">規定のLLMから選択する</h3>
@@ -754,11 +754,11 @@
                                         <p>各項目を入力します。<br>
                                         <img src="img/localLLM02.png" alt="localLLM02"><br></p>
                                         <ul>
+                                        <li>local LLM モデルタイプ：GGUF modelを選択</li>
+                                        <li>GGUFモデルパス：GGUFファイルのディレクトリを入力</li>
                                         <li>名前：使用するLLMの名称 (UI表示にのみ使用するため何でも構わない)</li>
                                         <li>説明：必要に応じてメモとして使用</li>
-                                        <li>最大トークン長：ダウンロードしたモデルの名称</li>
-                                        <li>local LLM モデルタイプ：GGUF modelを選択</li>
-                                        <li>最大トークン長：GGUFファイルのディレクトリを入力
+                                        <li>最大トークン長：ダウンロードしたモデルに応じたものを入力
                                         <br></li>
                                         </ul>
                                         <h4 id="次のページへ ＞"><a href="Benchmark.html">次のページへ ＞</a></h4>
