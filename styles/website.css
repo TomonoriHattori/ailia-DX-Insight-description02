@@ -207,3 +207,13 @@ table {
   margin-top: 10px;
 }
 }
+
+.chapter img{
+  width: 22px;
+  transform: translate(0%,20%);
+}
+
+.book-header h1 img{
+  width: 22px;
+  transform: translate(0%,20%);
+}
