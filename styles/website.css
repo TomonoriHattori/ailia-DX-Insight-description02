@@ -140,7 +140,9 @@ table {
   overflow-x: auto;
 }
 
-
+.markdown-section p {
+  font-size: 16px;
+}
 
 
 .news-list{
