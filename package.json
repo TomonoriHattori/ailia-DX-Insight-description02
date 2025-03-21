@@ -7,5 +7,8 @@
     "gitbook-plugin-custom-favicon": "^0.0.4",
     "gitbook-plugin-hide-published-with": "^0.0.1",
     "gitbook-plugin-intopic-toc": "^1.1.1"
+  },
+  "scripts": {
+    "dev": "node TitleChange.js"
   }
 }
