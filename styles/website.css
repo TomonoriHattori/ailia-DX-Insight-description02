@@ -144,6 +144,10 @@ table {
   font-size: 16px;
 }
 
+.markdown-section li {
+  font-size: 16px;
+}
+
 
 .news-list{
   list-style: none outside;
