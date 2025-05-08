@@ -52,10 +52,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="IndexRegister.html" />
+    <link rel="next" href="v1_2update.html" />
     
     
-    <link rel="prev" href="MainOperation.html" />
+    <link rel="prev" href="SetUp.html" />
     
 
     </head>
@@ -123,7 +123,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="v1_3update.html">
+        <li class="chapter active" data-level="1.4" data-path="v1_3update.html">
             
                 <a href="v1_3update.html">
             
@@ -183,7 +183,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.1.1" data-path="FileView.html">
+        <li class="chapter " data-level="2.1.1" data-path="FileView.html">
             
                 <a href="FileView.html">
             
@@ -751,7 +751,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/rule_folder.png'>ファイルビューの操作</a>
+        <a href="." ><img src='img_icons/newspaper.png'>v1.3リリースノート</a>
     </h1>
 </div>
 
@@ -766,56 +766,49 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ファイルビューの操作">ファイルビューの操作</h1>
-<h2 id="ファイルの並び順を変える">ファイルの並び順を変える</h2>
-<p>ファイルビュー上部に並んでいる項目名をクリックすると、ファイルの並び順が変わります。<br>
-<img src="img/file_view_01.png" alt="file_view_01.png"><br></p>
+                                <h1 id="バージョン13リリースノート">バージョン1.3リリースノート</h1>
+<h2 id="uiの改善">UIの改善</h2>
 <ul>
-<li><p>ファイル名で並び替え<br>
-「ファイル名」をクリックすると、名前順(A-Z/Z-A)に並びます。</p>
+<li><p>起動時に新しいチャット開始する画面を表示させるように変更<br>
+<img src="img/StartChat_01.jpg" alt="StartChat_01" height="350px"></p>
 </li>
-<li><p>ファイルサイズで並び替え<br>
-「サイズ」をクリックすると、サイズが大きい/小さい順に並びます。</p>
+<li><p>ストリーミング表示している際に、スクロールした時に自動スクロールが止まるように変更</p>
 </li>
-<li><p>インデックス登録の有無で並び替え<br>
-「AIステータス」をクリックすると、インデックス登録済/未登録で並びます。</p>
+<li><p>クエリバーでチャットモードを変更した場合も設定が保存されるように変更<br>
+<img src="img/SelectLLM_01.png" alt="SelectLLM_01" height="300px"></p>
 </li>
-<li><p>更新日時で並び替え<br>
-「更新日時」をクリックすると、ファイルの更新日時の新しい/古い順に並びます。
-<br></p>
+<li><p><a href="SetUp.html#カラーテーマの変更">ダークモードを追加</a></p>
 </li>
 </ul>
-<h2 id="ディレクトリの移動">ディレクトリの移動<div id="update03"></div></h2>
-<p>ファイルビューの項目の左上の記号から、ディレクトリ間を移動することができます。<br>また、カレントディレクトリの表示から、上の階層に直接移動することもできます。<br>
-<img src="img/file_view_01_01.png" alt="file_view_01_01.png"><br></p>
-<h2 id="ファイルの表示方法を変える">ファイルの表示方法を変える</h2>
-<p>ファイルビューの右上にある表示モードボタンをクリックすると、ファイルの表示方法（リスト表示/グリッド表示）を変えることができます。
-グリッド表示では、画像ファイルのサムネイルがグリッド状に並びます。<br>
-<img src="img/file_view_02.png" alt="file_view_02.png"><br>
-<img src="img/file_view_02_01.jpg" alt="file_view_02_01.png"><br>
-<br></p>
-<h2 id="フォルダをブックマークに追加する">フォルダをブックマークに追加する</h2>
-<p>頻繁に開くフォルダをブックマークに追加することができます。</p>
-<ol>
-<li>ブックマークに追加したいフォルダにカーソルを合わせ右クリックし、「このフォルダをブックマークに追加する」を選択します。<br>
-<img src="img/file_view_03.png" alt="file_view_03.png"><br></li>
-<li>左のサイドバーにあるブックマークにフォルダが追加されます。<br>
-<img src="img/file_view_04.png" alt="file_view_04.png"><br>
-<br></li>
-</ol>
-<h2 id="フォルダをブックマークから削除する">フォルダをブックマークから削除する</h2>
-<p>この操作ではフォルダ本体の削除は行われません。</p>
-<ol>
-<li>左サイドバーにあるブックマーク内の、削除したいフォルダを右クリックし、「このフォルダをブックマークから削除」を選択します<br>
-<img src="img/file_view_05.png" alt="file_view_05.png"><br></li>
-<li>ブックマークからフォルダが削除されます。
-<br></li>
-</ol>
-<h2 id="初期ディレクトリを設定する">初期ディレクトリを設定する<div id="update04"></div></h2>
-<p>設定<img src="img/icon_gear.png" alt="gear">の中にあるファイルビューの項目から起動時の初期ディレクトリを選択することができます。<br>
-<img src="img/file_view_06.png" alt="file_view_06.png"><br></p>
-<p><br></p>
-<h4 id="次のページへ ＞"><a href="IndexRegister.html">次のページへ ＞</a></h4>
+<h2 id="機能追加">機能追加</h2>
+<ul>
+<li><a href="LocalLLM.html#ailia-dx-insight内でのローカルllmの構築">ailia LLMのアップデートによるgemma3対応</a></li>
+<li><a href="GenerateImage.html#画像のアスペクト比を変更する">画像生成でアスペクト指定する機能を追加</a></li>
+<li><a href="IndexRegister.html#登録されたインデックスを管理する">インデックスの管理機能を追加</a></li>
+</ul>
+<h2 id="ユーザビリティの改善">ユーザビリティの改善</h2>
+<ul>
+<li>画像生成のタイムアウトを30秒から90秒に変更</li>
+<li>画像生成や要約のチャットヒストリーの名前をわかりやすく変更</li>
+<li>コンフィグファイルの更新エラー時に詳細エラーを表示</li>
+<li>翻訳結果を新しい翻訳にリネーム</li>
+</ul>
+<h2 id="初期設定の更新">初期設定の更新</h2>
+<ul>
+<li>ailia LLMをデフォルトで設定済みに変更</li>
+</ul>
+<h2 id="利用規約">利用規約</h2>
+<ul>
+<li>起動時に利用規約を表示</li>
+</ul>
+<h2 id="高速化">高速化</h2>
+<ul>
+<li>アプリ起動時間の短縮</li>
+</ul>
+<h2 id="不具合の修正">不具合の修正</h2>
+<ul>
+<li>macOSでキーボード操作を受け付けなくなることがある問題を修正</li>
+</ul>
 
                                 
                                 </section>
@@ -843,12 +836,12 @@
 
             
                 
-                <a href="MainOperation.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/label_important.png'>主な操作方法">
+                <a href="SetUp.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/manage_accounts.png'>セットアップ">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="IndexRegister.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/task.png'>ファイルをインデックスに登録する">
+                <a href="v1_2update.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/newspaper.png'>v1.2リリースノート">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -859,7 +852,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/rule_folder.png'>ファイルビューの操作","level":"2.1.1","depth":2,"next":{"title":"<img src='img_icons/task.png'>ファイルをインデックスに登録する","level":"2.1.2","depth":2,"path":"IndexRegister.md","ref":"IndexRegister.md","articles":[]},"previous":{"title":"<img src='img_icons/label_important.png'>主な操作方法","level":"2.1","depth":1,"path":"MainOperation.md","ref":"MainOperation.md","articles":[{"title":"<img src='img_icons/rule_folder.png'>ファイルビューの操作","level":"2.1.1","depth":2,"path":"FileView.md","ref":"FileView.md","articles":[]},{"title":"<img src='img_icons/task.png'>ファイルをインデックスに登録する","level":"2.1.2","depth":2,"path":"IndexRegister.md","ref":"IndexRegister.md","articles":[]},{"title":"<img src='img_icons/manage_accounts.png'>コンフィグファイルを作成する","level":"2.1.3","depth":2,"path":"ConfigFile.md","ref":"ConfigFile.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"FileView.md","mtime":"2025-03-14T08:42:44.628Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-08T07:35:42.196Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/newspaper.png'>v1.3リリースノート","level":"1.4","depth":1,"next":{"title":"<img src='img_icons/newspaper.png'>v1.2リリースノート","level":"1.5","depth":1,"path":"v1_2update.md","ref":"v1_2update.md","articles":[]},"previous":{"title":"<img src='img_icons/manage_accounts.png'>セットアップ","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"v1_3update.md","mtime":"2025-05-08T07:27:17.067Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-08T07:35:42.196Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
