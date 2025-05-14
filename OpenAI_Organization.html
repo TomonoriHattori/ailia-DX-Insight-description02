@@ -52,10 +52,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="CustomLLM_Recomend.html" />
     
-    
-    <link rel="prev" href="CustomLLM_Ollama.html" />
+    <link rel="prev" href="Pricing.html" />
     
 
     </head>
@@ -509,7 +507,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="5.1.1.4" data-path="CustomLLM_FastChat.html">
+        <li class="chapter " data-level="5.1.1.4" data-path="CustomLLM_FastChat.html">
             
                 <a href="CustomLLM_FastChat.html">
             
@@ -644,7 +642,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.3" data-path="OpenAI_Organization.html">
+        <li class="chapter active" data-level="6.1.3" data-path="OpenAI_Organization.html">
             
                 <a href="OpenAI_Organization.html">
             
@@ -764,7 +762,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/tune.png'>FastChatを使用したカスタムLLM構築</a>
+        <a href="." ><img src='img_icons/info.png'>API Organization</a>
     </h1>
 </div>
 
@@ -779,28 +777,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="fastchatのインストール">FastChatのインストール</h2>
-<p>サーバーを立てる端末にpythonモジュールとしてfschatをインストールします。
-<code>pip3 install fschat</code></p>
-<h2 id="サーバの起動">サーバの起動</h2>
-<p>vicuna-7b-v1.5をChatGPT API互換サーバーとして起動します。<br>
-<code>python3 -m fastchat.serve.controller</code><br>
-<code>python3 -m fastchat.serve.model_worker –model-names “vicuna” –model-path lmsys/vicuna-7b-v1.5 –load-8bit</code><br>
-<code>python3 -m fastchat.serve.openai_api_server –-host localhost –-port 8000</code><br></p>
-<h2 id="aillia-dx-insightでカスタムllmの登録">aillia DX InsightでカスタムLLMの登録</h2>
-<p>詳しい設定画面の呼び出し方は<a href="CustomLLM.html">こちら</a>をご参照ください。<br>
-<img src="img/CustomLLM_02.png" alt="CustomLLM_02.png"><br></p>
+                                <h1 id="openai-api-organizationの認証">OpenAI API Organizationの認証</h1>
+<p>OpenAIではAPI Organizationの認証を行うことで最新のモデルを使用することができます。<br>
+API OrganizationはAPIの使用ポリシーに違反する使用ケースを軽減する為に追加された認証プロセスです。<br>
+※認証を行うにはAPI開発用の<a href="OpenAI_APIKey.html#支払い情報を登録する">Payment methodの追加</a>が必要となります。<br></p>
+<h2 id="認証に必要なもの">認証に必要なもの</h2>
+<p>API Organizationには対応国政府発行の有効な身分証明書が必要となります。以下の身分証明書の内の一つ以上をご用意の上、認証を行ってください。<br>
+※本人確認として身分証明書の持ち主の顔をカメラで撮影する為、認証は本人が行ってください。</p>
 <ul>
-<li>名前：使用するLLMの名称 (UI表示にのみ使用するため何でも構わない)</li>
-<li>説明：必要に応じてメモとして使用</li>
-<li>モデル：OpenAI互換APIサーバーで指定したモデル名 (gpt-3.5-turbo等)</li>
-<li>URL(*)：OpenAI互換APIサーバーが発信しているIPアドレスとport番号 (サーバー公開が–host 192.168.1.10 –port 8000の場合、<a href="http://192.168.1.10:8000" target="_blank">http://192.168.1.10:8000</a>)</li>
-<li>最大トークン長：モデルの対応している最大トークン数を設定（4096以上の値を設定する、この値に応じてRAGのtopKが決定される）
-<br></li>
+<li>運転免許証</li>
+<li>パスポート</li>
+<li>在留カード</li>
+<li>マイナンバーカード</li>
+<li>ビザ</li>
 </ul>
-<p>(*)未記入の場合、HTTPの接続エラーになります。</p>
-<p><br></p>
-<h4 id="次のページへ ＞"><a href="CustomLLM_Recomend.html">次のページへ ＞</a></h4>
+<p>また、認証にはカメラを使用するためスマートフォンが必要となります。<br>
+（PCでアクセスした場合でも、認証の途中でQRコードによるスマートフォンへの移動が案内されます）<br></p>
+<ol>
+<li><p>OpenAI API プラットフォームのSetting &gt; <a href="https://platform.openai.com/settings/organization/general" target="_blank">General</a>にアクセスし、「Verify Organization」から認証を行います。<br>
+<img src="img/API_organization01.jpg" alt="API_organization01"><br></p>
+</li>
+<li><p>認証にはPersonaという外部のデジタルアイデンティティ認証プラットフォームを使用します。<br>
+Start ID Checkを選択するとPersonaの認証プラットフォームへと移動します。<br>
+PersonaおよびOpenAIのプライバシーポリシーを確認後、「私は生体認証情報の処理に同意します。」にチェックを入れ、「今すぐ始める」を選択します。<br>
+<img src="img/API_organization02.jpg" alt="API_organization02"><br></p>
+</li>
+<li><p>居住国を選択し、「確認する」を選択します。<br>
+<img src="img/API_organization03.jpg" alt="API_organization03"><br></p>
+</li>
+<li><p>本人確認書類をオプションの中から選択します。<br>
+<img src="img/API_organization04.jpg" alt="API_organization04"><br>
+次の画面でカメラを使用して確認書類を撮影します。（カメラへのアクセスを求められた場合は、許可を選択してください）<br></p>
+</li>
+<li><p>本人確認の為に顔認証を行います。画面の案内に沿って操作を続けます。<br>
+<img src="img/API_organization05.jpg" alt="API_organization05"><br></p>
+</li>
+<li><p>API Organizationの認証が完了すると、APIプラットフォームのVerificationsの表示が「Organization Verified」となり、OpenAIの最新のモデルが使用できるようになります。
+<img src="img/API_organization06.jpg" alt="API_organization06"><br></p>
+</li>
+</ol>
+<h4 id="homeへ戻る"><a href="./">HOMEへ戻る</a></h4>
 
                                 
                                 </section>
@@ -828,14 +844,10 @@
 
             
                 
-                <a href="CustomLLM_Ollama.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/tune.png'>Ollamaを使用したカスタムLLM構築">
+                <a href="Pricing.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: <img src='img_icons/info.png'>料金体系">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="CustomLLM_Recomend.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/tune.png'>弊社推奨LLM">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -844,7 +856,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/tune.png'>FastChatを使用したカスタムLLM構築","level":"5.1.1.4","depth":3,"next":{"title":"<img src='img_icons/tune.png'>弊社推奨LLM","level":"5.1.1.5","depth":3,"path":"CustomLLM_Recomend.md","ref":"CustomLLM_Recomend.md","articles":[]},"previous":{"title":"<img src='img_icons/tune.png'>Ollamaを使用したカスタムLLM構築","level":"5.1.1.3","depth":3,"path":"CustomLLM_Ollama.md","ref":"CustomLLM_Ollama.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"CustomLLM_FastChat.md","mtime":"2025-03-14T08:42:44.629Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-14T18:21:30.691Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/info.png'>API Organization","level":"6.1.3","depth":2,"next":{"title":"<img src='img_icons/play_circle.png'>外部リンク","level":"7.1","depth":1,"ref":"","articles":[{"title":"<img src='img_icons/download.png'>評価用アプリDL","level":"7.1.1","depth":2,"url":"https://ailia.ai/dx/","ref":"https://ailia.ai/dx/","articles":[]},{"title":"<img src='img_icons/play_circle.png'>説明動画（Youtube）","level":"7.1.2","depth":2,"url":"https://www.youtube.com/watch?v=jGhKwrF3by8","ref":"https://www.youtube.com/watch?v=jGhKwrF3by8","articles":[]}]},"previous":{"title":"<img src='img_icons/info.png'>料金体系","level":"6.1.2","depth":2,"path":"Pricing.md","ref":"Pricing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"OpenAI_Organization.md","mtime":"2025-05-14T15:13:25.607Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-14T18:21:30.691Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

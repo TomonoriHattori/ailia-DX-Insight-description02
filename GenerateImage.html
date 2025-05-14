@@ -644,6 +644,19 @@
             
         </li>
     
+        <li class="chapter " data-level="6.1.3" data-path="OpenAI_Organization.html">
+            
+                <a href="OpenAI_Organization.html">
+            
+                    
+                    <img src='img_icons/info.png'>API Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -827,6 +840,19 @@
 </ol>
 <p>設定を変更後、画像生成を行うと指定したサイズで画像が生成されます。<br>
 <img src="img/EditImage_08.jpg" alt="EditImage_08"><br></p>
+<h2 id="文章で画像を編集する。">文章で画像を編集する。</h2>
+<p>Gemini、またはgpt-image-1を使用することで、チャットでの会話のような流れで生成画像を編集することができます。<br>
+<a href="OpenAI_Organization.html">※gpt-image-1を使用する場合はOpenAI Organizationの認証が必要となります。</a><br>
+<a href="Gemini.html#gemini-api-keyを取得する">※Geminiを使用する場合はGeminiのAPIキーを作成して、ailia DX Insightにて登録をする必要があります。</a><br>
+<img src="img/EditImg_tex01.jpg" alt="EditImg_tex01"><br></p>
+<ol>
+<li>クエリバーのモデルを「Gemini」もしくは「gpt-image-1」に変更した上で、画像を生成します。<br>（文章で画像編集を行う場合は、Grminiもしくはgpt-image-1で画像生成を行ってください）<br>
+<img src="img/EditImg_tex02.jpg" alt="EditImg_tex02"><br></li>
+<li>画像に対して編集をしたい内容を文章で指定して送信します。<br>
+<img src="img/EditImg_tex03.jpg" alt="EditImg_tex03"><br></li>
+<li>編集された画像が生成されます。<br>
+<img src="img/EditImg_tex04.jpg" alt="EditImg_tex04"><br></li>
+</ol>
 <h4 id="次のページへ ＞"><a href="Recording.html">次のページへ ＞</a></h4>
 <h4 id="一覧に戻る"><a href="UseAI.html">一覧に戻る</a></h4>
 
@@ -872,7 +898,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/palette.png'>画像を生成する","level":"3.1.8","depth":2,"next":{"title":"<img src='img_icons/record_voice_over.png'>議事録を取る","level":"3.1.9","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},"previous":{"title":"<img src='img_icons/image_search.png'>画像を検索する","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"GenerateImage.md","mtime":"2025-03-18T12:19:41.312Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-08T11:12:12.243Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/palette.png'>画像を生成する","level":"3.1.8","depth":2,"next":{"title":"<img src='img_icons/record_voice_over.png'>議事録を取る","level":"3.1.9","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},"previous":{"title":"<img src='img_icons/image_search.png'>画像を検索する","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"GenerateImage.md","mtime":"2025-05-14T18:15:09.913Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-14T18:21:30.691Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
