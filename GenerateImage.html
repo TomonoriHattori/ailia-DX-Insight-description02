@@ -57,10 +57,22 @@
     
     <link rel="prev" href="SearchImage.html" />
     
+    <script>
+    window.onload = function() {
+    // 現在のURLにハッシュが含まれているか確認
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            // 目的の要素へスクロール
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+    };
+    </script>
 
     </head>
     <body>
-        
+
 <div class="book honkit-cloak">
     <div class="book-summary">
         
@@ -978,20 +990,8 @@
         
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
-    
-        <script>
-        window.onload = function() {
-        // 現在のURLにハッシュが含まれているか確認
-        if (window.location.hash) {
-            const target = document.querySelector(window.location.hash);
-            if (target) {
-                // 目的の要素へスクロール
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }
-        };
-        </script>
 
+        
     </body>
 </html>
 
