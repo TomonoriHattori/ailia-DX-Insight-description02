@@ -948,6 +948,20 @@
         
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
 
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash) {
+                const targetElement = document.querySelector(window.location.hash);
+                if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+                }
+            }
+            });
+        </script>
+
     </body>
 </html>
 
