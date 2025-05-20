@@ -844,7 +844,7 @@
 </ol>
 <p>設定を変更後、画像生成を行うと指定したサイズで画像が生成されます。<br>
 <img src="img/EditImage_08.jpg" alt="EditImage_08"><br></p>
-<h2 id="文章で画像を編集する">文章で画像を編集する</h2>
+<h2 id="editImg01">文章で画像を編集する</h2>
 <p>Gemini、またはgpt-image-1を使用することで、チャットでの会話のような流れで生成画像を編集することができます。<br>
 <a href="OpenAI_Organization.html">※gpt-image-1を使用する場合はOpenAI Organizationの認証が必要となります。</a><br>
 <a href="Gemini.html#gemini-api-keyを取得する">※Geminiを使用する場合はGeminiのAPIキーを作成して、ailia DX Insightにて登録をする必要があります。</a><br>
@@ -954,6 +954,18 @@
             var book = document.querySelector(".book");
             book.classList.remove("honkit-cloak");
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash) {
+            const targetElement = document.querySelector(window.location.hash);
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
+        });
+
     </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
@@ -985,20 +997,6 @@
         
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
-        
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            if (window.location.hash) {
-                const targetElement = document.querySelector(window.location.hash);
-                if (targetElement) {
-                setTimeout(function() {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-                }
-            }
-            });
-        </script>
-
     </body>
 </html>
 

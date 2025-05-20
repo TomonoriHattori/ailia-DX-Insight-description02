@@ -800,7 +800,7 @@
 <li><a href="GenerateImage.html#画像のアスペクト比を変更する">画像生成でアスペクト指定する機能を追加</a></li>
 <li><a href="IndexRegister.html#登録されたインデックスを管理する">インデックスの管理機能を追加</a></li>
 <li><a href="IndexRegister.html#アプリ起動時にフォルダ内のインデックスを更新する">選択したフォルダ内のインデックスを自動で更新する機能を追加</a></li>
-<li><a href="GenerateImage.html#文章で画像を編集する">画像生成のLLM選択にGeminiとgpt-image-1を追加</a></li>
+<li><a href="GenerateImage.html#editImg01">画像生成のLLM選択にGeminiとgpt-image-1を追加</a></li>
 </ul>
 <h2 id="ユーザビリティの改善">ユーザビリティの改善</h2>
 <ul>
@@ -917,6 +917,18 @@
             var book = document.querySelector(".book");
             book.classList.remove("honkit-cloak");
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash) {
+            const targetElement = document.querySelector(window.location.hash);
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
+        });
+
     </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
@@ -949,18 +961,7 @@
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            if (window.location.hash) {
-                const targetElement = document.querySelector(window.location.hash);
-                if (targetElement) {
-                setTimeout(function() {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-                }
-            }
-            });
-        </script>
+
 
     </body>
 </html>
