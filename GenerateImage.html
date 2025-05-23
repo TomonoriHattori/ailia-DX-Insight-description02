@@ -58,16 +58,9 @@
     <link rel="prev" href="SearchImage.html" />
     
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
-    <script src="anchorCtrl.js"></script>
-    
     </head>
     <body>
-
         
-
 <div class="book honkit-cloak">
     <div class="book-summary">
         
@@ -802,7 +795,8 @@
 <br></li>
 </ol>
 <h2 id="生成された画像を編集する">生成された画像を編集する</h2>
-<p>生成された画像を編集し、より望むものに近づけることができます。</p>
+<p>生成された画像を編集し、より望むものに近づけることができます。
+※生成画像でチャットを継続する場合は、生成の際に使用したモデルをそのままご使用ください。（バージョン1.3.1以降でチャットヒストリーの変換機能が導入され、将来的に変更可能になる予定です。）</p>
 <ol>
 <li>生成された画像の右上に表示されている「編集」を選択します。<br>
 <img src="img/EditImage_01.jpg" alt="EditImage_01"></li>
@@ -829,9 +823,9 @@
 <li>画面右上にある歯車アイコンを押します。<br>
 <img src="img/setup_03.png" alt="setup_03"></li>
 <li>「透かし画像」の項目内にある透かし画像ファイルパスの「登録」を選択し、表示されるエクスプローラー内にて使用する画像を選択します。<br>
-<img src="img/watermark_01.png" alt="watermark_01"><br></li>
+<img src="img/watermark_01.jpg" alt="watermark_01"><br></li>
 <li><p>ウォーターマークに使用する画像ファイルのディレクトリが表示されれば、設定は完了です。<br>
-<img src="img/watermark_02.png" alt="watermark_02"><br></p>
+<img src="img/watermark_02.jpg" alt="watermark_02"><br></p>
 </li>
 <li><p>画像を生成すると、画像の右下にウォーターマークが追加されます。<br>
 <img src="img/watermark_03.jpg" alt="watermark_03"><br>
@@ -842,12 +836,14 @@
 <p>ver.1.2.1より生成する画像のアスペクト比を変更することができます。</p>
 <ol>
 <li>ailia DX Insightの設定<img src="img/icon_gear.png" alt="歯車">を選択します。</li>
-<li>画像サイズの項目を変更することで生成する画像のサイズ、アスペクト比を変更することができます。<br>
-<img src="img/EditImage_07.jpg" alt="EditImage_07"><br></li>
-</ol>
-<p>設定を変更後、画像生成を行うと指定したサイズで画像が生成されます。<br>
+<li><p>画像サイズの項目を変更することで生成する画像のサイズ、アスペクト比を変更することができます。<br>
+<img src="img/EditImage_07.jpg" alt="EditImage_07"><br></p>
+</li>
+<li><p>設定を変更後、画像生成を行うと指定したサイズで画像が生成されます。<br>
 <img src="img/EditImage_08.jpg" alt="EditImage_08"><br></p>
-<h2 id="editImg01">文章で画像を編集する</h2>
+</li>
+</ol>
+<h2 id="文章で画像を編集する">文章で画像を編集する</h2>
 <p>Gemini、またはgpt-image-1を使用することで、チャットでの会話のような流れで生成画像を編集することができます。<br>
 <a href="OpenAI_Organization.html">※gpt-image-1を使用する場合はOpenAI Organizationの認証が必要となります。</a><br>
 <a href="Gemini.html#gemini-api-keyを取得する">※Geminiを使用する場合はGeminiのAPIキーを作成して、ailia DX Insightにて登録をする必要があります。</a><br>
@@ -902,11 +898,10 @@
         
     </div>
 
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/palette.png'>画像を生成する","level":"3.1.8","depth":2,"next":{"title":"<img src='img_icons/record_voice_over.png'>議事録を取る","level":"3.1.9","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},"previous":{"title":"<img src='img_icons/image_search.png'>画像を検索する","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"GenerateImage.md","mtime":"2025-05-19T04:36:46.774Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-19T04:39:55.315Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/palette.png'>画像を生成する","level":"3.1.8","depth":2,"next":{"title":"<img src='img_icons/record_voice_over.png'>議事録を取る","level":"3.1.9","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},"previous":{"title":"<img src='img_icons/image_search.png'>画像を検索する","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"GenerateImage.md","mtime":"2025-05-23T07:54:02.853Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-23T07:56:43.720Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -919,9 +914,7 @@
             }
         </style>
     </noscript>
-
     <script>
-
         // Restore sidebar state as critical path for prevent layout shift
         function __init__getSidebarState(defaultValue){
             var baseKey = "";
@@ -957,18 +950,6 @@
             var book = document.querySelector(".book");
             book.classList.remove("honkit-cloak");
         }
-
-        document.addEventListener('DOMContentLoaded', function() {
-        if (window.location.hash) {
-            const targetElement = document.querySelector(window.location.hash);
-            if (targetElement) {
-                setTimeout(function() {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-            }
-        }
-        });
-
     </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
@@ -1000,7 +981,7 @@
         
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
-        
+    
 
     </body>
 </html>
