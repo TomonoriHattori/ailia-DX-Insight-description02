@@ -52,10 +52,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SearchImage.html" />
+    <link rel="next" href="Recording.html" />
     
     
-    <link rel="prev" href="Translation.html" />
+    <link rel="prev" href="GenerateImage.html" />
     
 
     </head>
@@ -326,7 +326,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.6" data-path="Proofread.html">
+        <li class="chapter " data-level="3.1.6" data-path="Proofread.html">
             
                 <a href="Proofread.html">
             
@@ -365,7 +365,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="EditImage.html">
+        <li class="chapter active" data-level="3.1.9" data-path="EditImage.html">
             
                 <a href="EditImage.html">
             
@@ -816,7 +816,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/spellcheck.png'>文書ファイルを校正する</a>
+        <a href="." ><img src='img_icons/palette.png'>画像を編集する</a>
     </h1>
 </div>
 
@@ -831,20 +831,63 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="文書ファイルを校正する">文書ファイルを校正する</h1>
-<p>文書ファイルをインデックス登録すると、登録した文書ファイルに記載されている内容をAIに校正させることができます。
-<br></p>
-<p>ファイルをインデックス登録する方法については<a href="IndexRegister.html">こちら</a>をご確認ください。</p>
+                                <h1 id="生成画像を編集する">生成画像を編集する</h1>
+<p>ailia DX Insightで生成した画像は編集することができます。
+画像生成の方法については<a href="GenerateImage.html">こちら</a>をご確認ください。<br>※画像の生成と編集に対応したLLMが必要となります。</p>
+<h2 id="生成された画像を編集する">生成された画像を編集する</h2>
+<p>AI生成された画像を編集し、より望むものに近づけることができます。</p>
 <ol>
-<li>画面左上のアプリメニューから「テキスト校正」を選択します。<br>
-<img src="img/Proofread_01.png" alt="Proofread_01.png"><br></li>
-<li>校正したいファイルを右クリックし、「校正」を選択します。<br>
-<img src="img/Proofread_02.png" alt="Proofread_02.png"><br></li>
-<li>AIが文書を校正し、校正前の文章が左に、校正結果の文章が右に表示されます。<br>
-<img src="img/Proofread_03.png" alt="Proofread_03.png"><br></li>
+<li>生成された画像の右上に表示されている「編集」を選択します。<br>
+<img src="img/EditImage_01.jpg" alt="EditImage_01"></li>
+<li>編集画面が表示されます<br>
+<img src="img/EditImage_02.jpg" alt="EditImage_02"></li>
+<li>編集したい箇所をマウスでドラッグして囲み、マスクを作成します。<br>
+マスクを作成した状態で「Done」を選択し、マスクの作成を完了します。<br>
+<img src="img/EditImage_03.jpg" alt="EditImage_03"></li>
+<li>画面下のチャットボックスに編集したい内容を入力し、送信します。<br>
+<img src="img/EditImage_04.png" alt="EditImage_04"></li>
+<li><p>AIが画像を再生成した結果が表示されます。<br>
+<img src="img/EditImage_05.jpg" alt="EditImage_05"></p>
+<ul>
+<li><div id="update09"></div>画像の編集画面で左上の「すべてを選択」を押すことで、画面全体を選択することができます。<br>
+<img src="img/EditImage_06.jpg" alt="EditImage_06"></li>
+</ul>
+</li>
 </ol>
-<p><br></p>
-<h4 id="次のページへ ＞"><a href="SearchImage.html">次のページへ ＞</a></h4>
+<h2 id="背景切り抜き機能">背景切り抜き機能</h2>
+<h3 id="前景を選択">前景を選択</h3>
+<p>生成された画像の前景を切り出し、背景のみをマスクして編集することができます。
+<img src="img/EditImage_09.jpg" alt="EditImage_09"><br>
+<img src="img/EditImage_10.jpg" alt="EditImage_10"></p>
+<h3 id="マジック選択ツール">マジック選択ツール</h3>
+<p>マジック選択ツールを使用すると選択した箇所にあるものを自動識別してマスクをかけることができます。</p>
+<ol>
+<li><p>編集画面でマジック選択ツールを選択します。<br>
+<img src="img/EditImage_11.jpg" alt="EditImage_11"><br></p>
+</li>
+<li><p>ボックスが編集したい対象物の内側に入るようにドラッグします。<br>
+細かい部分はクリックで個別に選択することもできます。<br>
+複数回繰り返して、対象物の全体がマスクされるようにします。
+<img src="img/EditImage_12.jpg" alt="EditImage_12"><br></p>
+</li>
+<li><p>チャットボックスにプロンプトを入力すると、マスクをかけた部分を編集した生成結果が表示されます。<br>
+<img src="img/EditImage_13.jpg" alt="EditImage_13"><br></p>
+</li>
+</ol>
+<h2 id="文章で画像を編集する">文章で画像を編集する</h2>
+<p>Gemini、またはgpt-image-1を使用することで、チャットでの会話のような流れで生成画像を編集することができます。<br>
+<a href="OpenAI_Organization.html">※gpt-image-1を使用する場合はOpenAI Organizationの認証が必要となります。</a><br>
+<a href="Gemini.html#gemini-api-keyを取得する">※Geminiを使用する場合はGeminiのAPIキーを作成して、ailia DX Insightにて登録をする必要があります。</a><br>
+<img src="img/EditImg_tex01.jpg" alt="EditImg_tex01"><br></p>
+<ol>
+<li>クエリバーのモデルを「Gemini」もしくは「gpt-image-1」に変更した上で、画像を生成します。<br>
+<img src="img/EditImg_tex02.jpg" alt="EditImg_tex02"><br></li>
+<li>画像に対して編集をしたい内容を文章で指定して送信します。<br>
+<img src="img/EditImg_tex03.jpg" alt="EditImg_tex03"><br></li>
+<li>編集された画像が生成されます。<br>
+<img src="img/EditImg_tex04.jpg" alt="EditImg_tex04"><br></li>
+</ol>
+<h4 id="次のページへ ＞"><a href="Recording.html">次のページへ ＞</a></h4>
 <h4 id="一覧に戻る"><a href="UseAI.html">一覧に戻る</a></h4>
 
                                 
@@ -873,12 +916,12 @@
 
             
                 
-                <a href="Translation.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/translate.png'>文書ファイルを翻訳する">
+                <a href="GenerateImage.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/palette.png'>画像を生成する">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="SearchImage.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/image_search.png'>画像を検索する">
+                <a href="Recording.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/record_voice_over.png'>議事録を取る">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -889,7 +932,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/spellcheck.png'>文書ファイルを校正する","level":"3.1.6","depth":2,"next":{"title":"<img src='img_icons/image_search.png'>画像を検索する","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"previous":{"title":"<img src='img_icons/translate.png'>文書ファイルを翻訳する","level":"3.1.5","depth":2,"path":"Translation.md","ref":"Translation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"Proofread.md","mtime":"2025-09-26T01:23:17.913Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T06:33:19.673Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/palette.png'>画像を編集する","level":"3.1.9","depth":2,"next":{"title":"<img src='img_icons/record_voice_over.png'>議事録を取る","level":"3.1.10","depth":2,"path":"Recording.md","ref":"Recording.md","articles":[]},"previous":{"title":"<img src='img_icons/palette.png'>画像を生成する","level":"3.1.8","depth":2,"path":"GenerateImage.md","ref":"GenerateImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"EditImage.md","mtime":"2025-10-03T06:06:58.436Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T06:33:19.673Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

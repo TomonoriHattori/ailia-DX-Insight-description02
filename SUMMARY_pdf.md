@@ -1,7 +1,8 @@
 * [ailia DX Insight](README.md)
 * [概要](overview.md)
 * [セットアップ](SetUp.md)
-* [v1.3リリースノート](v1_2update.md)
+* [v1.4リリースノート](v1_4update.md)
+* [v1.3リリースノート](v1_3update.md)
 * [v1.2リリースノート](v1_2update.md)
 * [v1.0から1.1へのアップデートガイド](v1_1update.md)
 ---

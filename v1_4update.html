@@ -52,10 +52,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SearchImage.html" />
+    <link rel="next" href="v1_3update.html" />
     
     
-    <link rel="prev" href="Translation.html" />
+    <link rel="prev" href="SetUp.html" />
     
 
     </head>
@@ -123,7 +123,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="v1_4update.html">
+        <li class="chapter active" data-level="1.4" data-path="v1_4update.html">
             
                 <a href="v1_4update.html">
             
@@ -326,7 +326,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.6" data-path="Proofread.html">
+        <li class="chapter " data-level="3.1.6" data-path="Proofread.html">
             
                 <a href="Proofread.html">
             
@@ -816,7 +816,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." ><img src='img_icons/spellcheck.png'>文書ファイルを校正する</a>
+        <a href="." ><img src='img_icons/newspaper.png'>v1.4リリースノート</a>
     </h1>
 </div>
 
@@ -831,21 +831,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="文書ファイルを校正する">文書ファイルを校正する</h1>
-<p>文書ファイルをインデックス登録すると、登録した文書ファイルに記載されている内容をAIに校正させることができます。
+                                <h1 id="バージョン14リリースノート">バージョン1.4リリースノート</h1>
+<h2 id="機能追加">機能追加</h2>
+<ul>
+<li><p><a href="Claude.html">Claudeに対応</a></p>
+</li>
+<li><p><a href="GenerateVoice.html">音声合成機能の追加</a></p>
+</li>
+<li><p><a href="EditImage.html">画像編集に背景切り抜き機能を追加</a></p>
+</li>
+<li><p><a href="Translation.html">複数のファイルを同時に翻訳する機能を追加</a></p>
+</li>
+<li><p><a href="Recording.html">議事録に話者分離を行う機能を追加</a></p>
+</li>
+</ul>
+<ul>
+<li><p>ChatGPT GPT-5に対応<br>
+  チャットボックス左のLLMからGPT-5を選択することができます。<br>
+  <img src="img/v1_4image_01.jpg" alt="image01"><br>
+  ※GPT-5をご利用いただくには<a href="OpenAI_APIKey.html">OpenAIのAPIキーの取得</a>が必要となります。<br>
 <br></p>
-<p>ファイルをインデックス登録する方法については<a href="IndexRegister.html">こちら</a>をご確認ください。</p>
-<ol>
-<li>画面左上のアプリメニューから「テキスト校正」を選択します。<br>
-<img src="img/Proofread_01.png" alt="Proofread_01.png"><br></li>
-<li>校正したいファイルを右クリックし、「校正」を選択します。<br>
-<img src="img/Proofread_02.png" alt="Proofread_02.png"><br></li>
-<li>AIが文書を校正し、校正前の文章が左に、校正結果の文章が右に表示されます。<br>
-<img src="img/Proofread_03.png" alt="Proofread_03.png"><br></li>
-</ol>
-<p><br></p>
-<h4 id="次のページへ ＞"><a href="SearchImage.html">次のページへ ＞</a></h4>
-<h4 id="一覧に戻る"><a href="UseAI.html">一覧に戻る</a></h4>
+</li>
+<li><p>チャットヒストリーの検索機能の追加<br>
+  チャットヒストリーの上部にある検索ボックスからチャットヒストリー内でキーワードに該当する回答のある履歴を検索することが出来ます。
+<br></p>
+</li>
+<li><p>OpenAIの画像生成でinput fidelityに対応<br>
+  設定 &gt; 画像生成の項目内から入力画像の忠実度をhigh / lowから選択することができます。<br>
+  ※input fidelityに対応したGPTモデルが必要となります。(gpt-image-1等)
+  <img src="img/v1_4image_02.jpg" alt="image02"><br></p>
+</li>
+</ul>
+<h2 id="uiの改善">UIの改善</h2>
+<ul>
+<li>音声検索のUI改善</li>
+<li>設定画面でダイアログ外のクリックで閉じないように変更</li>
+<li>クエリバーからアプリのセレクトボックスを削除</li>
+<li>チャットヒストリーを全て削除するときに確認を出す</li>
+<li>アプリメニューの表示位置調整</li>
+</ul>
+<h2 id="不具合修正">不具合修正</h2>
+<ul>
+<li>ウォーターマーク画像を登録後に削除すると画像生成でエラーになる問題を修正</li>
+</ul>
+<h2 id="パフォーマンス改善">パフォーマンス改善</h2>
+<ul>
+<li>巨大なフォルダをRAGに入れた場合の速度を改善</li>
+</ul>
+<h2 id="利用規約">利用規約</h2>
+<ul>
+<li>利用規約の英語版の追加</li>
+</ul>
+<h2 id="ビルド環境">ビルド環境</h2>
+<ul>
+<li>Flutterを3.19.6から3.32.4に更新</li>
+</ul>
+<h4 id="次のページへ ＞"><a href="v1_3update.html">次のページへ ＞</a></h4>
 
                                 
                                 </section>
@@ -873,12 +914,12 @@
 
             
                 
-                <a href="Translation.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/translate.png'>文書ファイルを翻訳する">
+                <a href="SetUp.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/manage_accounts.png'>セットアップ">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="SearchImage.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/image_search.png'>画像を検索する">
+                <a href="v1_3update.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/newspaper.png'>v1.3リリースノート">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -889,7 +930,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/spellcheck.png'>文書ファイルを校正する","level":"3.1.6","depth":2,"next":{"title":"<img src='img_icons/image_search.png'>画像を検索する","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"previous":{"title":"<img src='img_icons/translate.png'>文書ファイルを翻訳する","level":"3.1.5","depth":2,"path":"Translation.md","ref":"Translation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"Proofread.md","mtime":"2025-09-26T01:23:17.913Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T06:33:19.673Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/newspaper.png'>v1.4リリースノート","level":"1.4","depth":1,"next":{"title":"<img src='img_icons/newspaper.png'>v1.3リリースノート","level":"1.5","depth":1,"path":"v1_3update.md","ref":"v1_3update.md","articles":[]},"previous":{"title":"<img src='img_icons/manage_accounts.png'>セットアップ","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"v1_4update.md","mtime":"2025-10-03T06:28:08.409Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-03T06:33:19.673Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
