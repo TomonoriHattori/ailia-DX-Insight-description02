@@ -469,6 +469,19 @@
             
         </li>
     
+        <li class="chapter " data-level="4.1.3" data-path="ChatHistory.html">
+            
+                <a href="ChatHistory.html">
+            
+                    
+                    <img src='img_icons/History.svg'>チャットヒストリー
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -834,6 +847,7 @@
                                 <h1 id="画像を生成する">画像を生成する</h1>
 <p>チャットボックスに入力した文書を元にAIによる画像生成を行うことができます。<br>
 また、ailia DX Insightでは生成された画像を編集し、より望むものに近づけることができる他、著作権保護や改ざん防止の為にウォーターマークを埋め込んで画像を生成させることができます。<br></p>
+<p>生成した画像の編集方法に関しては、「<a href="EditImage.html">画像を編集する</a>」の項目をご確認ください。<br></p>
 <p>※画像生成にはDALL-Eを使用するため、GPT-4以降で動作します。<br>
 ※GPTのバージョンは設定<img src="img/icon_gear.png" alt="歯車">の中の「チャットAI」の項目の中で「OpenAI」をクリックすると選択できます。</p>
 <h2 id="プロンプトから画像を生成する">プロンプトから画像を生成する</h2>
@@ -846,34 +860,14 @@
 <img src="img/UseAI_17.jpg" alt="useai_17.png"><br>
 <br></li>
 </ol>
-<h2 id="生成された画像を編集する">生成された画像を編集する</h2>
-<p>生成された画像を編集し、より望むものに近づけることができます。</p>
-<ol>
-<li>生成された画像の右上に表示されている「編集」を選択します。<br>
-<img src="img/EditImage_01.jpg" alt="EditImage_01"></li>
-<li>編集画面が表示されます<br>
-<img src="img/EditImage_02.jpg" alt="EditImage_02"></li>
-<li>編集したい箇所をマウスでドラッグして囲み、マスクを作成します。<br>
-マスクを作成した状態で「Done」を選択し、マスクの作成を完了します。<br>
-<img src="img/EditImage_03.jpg" alt="EditImage_03"></li>
-<li>画面下のチャットボックスに編集したい内容を入力し、送信します。<br>
-<img src="img/EditImage_04.png" alt="EditImage_04"></li>
-<li><p>AIが画像を再生成した結果が表示されます。<br>
-<img src="img/EditImage_05.jpg" alt="EditImage_05"></p>
-<ul>
-<li><div id="update09"></div>画像の編集画面で左上の「すべてを選択」を押すことで、画面全体を選択することができます。<br>
-<img src="img/EditImage_06.jpg" alt="EditImage_06"></li>
-</ul>
-</li>
-</ol>
 <h2 id="生成される画像にウォーターマークを追加する">生成される画像にウォーターマークを追加する</h2>
 <p>ailia DX Insightでは生成する画像に、ウォーターマークを手軽に追加することができます。</p>
 <p>ここでは見本としてこちらのロゴマークを50％透過させた画像を使用します。<br>
 <img src="img/ailia_DX_logo_02.png" alt="logo_02"></p>
 <ol>
 <li>画面右上にある歯車アイコンを押します。<br>
-<img src="img/setup_03.png" alt="setup_03"></li>
-<li>「透かし画像」の項目内にある透かし画像ファイルパスの「登録」を選択し、表示されるエクスプローラー内にて使用する画像を選択します。<br>
+<img src="img/setup_03.jpg" alt="setup_03"></li>
+<li>「画像生成」の項目内にある「透かし画像ファイルパス」の「登録」を選択し、表示されるエクスプローラー内にて使用する画像を選択します。<br>
 <img src="img/watermark_01.jpg" alt="watermark_01"><br></li>
 <li><p>ウォーターマークに使用する画像ファイルのディレクトリが表示されれば、設定は完了です。<br>
 <img src="img/watermark_02.jpg" alt="watermark_02"><br></p>
@@ -939,7 +933,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/palette.png'>画像を生成する","level":"3.1.8","depth":2,"next":{"title":"<img src='img_icons/palette.png'>画像を編集する","level":"3.1.9","depth":2,"path":"EditImage.md","ref":"EditImage.md","articles":[]},"previous":{"title":"<img src='img_icons/image_search.png'>画像を検索する","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"GenerateImage.md","mtime":"2025-10-10T01:06:48.011Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-10T01:07:50.358Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/palette.png'>画像を生成する","level":"3.1.8","depth":2,"next":{"title":"<img src='img_icons/palette.png'>画像を編集する","level":"3.1.9","depth":2,"path":"EditImage.md","ref":"EditImage.md","articles":[]},"previous":{"title":"<img src='img_icons/image_search.png'>画像を検索する","level":"3.1.7","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"GenerateImage.md","mtime":"2025-10-27T05:51:27.153Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-30T19:10:53.600Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

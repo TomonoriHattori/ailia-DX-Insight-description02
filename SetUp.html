@@ -469,6 +469,19 @@
             
         </li>
     
+        <li class="chapter " data-level="4.1.3" data-path="ChatHistory.html">
+            
+                <a href="ChatHistory.html">
+            
+                    
+                    <img src='img_icons/History.svg'>チャットヒストリー
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -856,12 +869,16 @@
 <li>チュートリアルの最後、「APIキーの設定」まで進みます。</li>
 <li>「OpenAI APIキー」の下にあるテキストボックスに、&quot;sk-&quot;から始まるOpenAI APIキーを入力します。<br>
 <img src="img/setup_02.jpg" alt="setup_02.png"><br></li>
-<li>「完了」ボタンを押します。<h4 id="通常画面から設定する場合">通常画面から設定する場合</h4>
-</li>
+<li>「完了」ボタンを押します。</li>
+</ol>
+<h4 id="通常画面から設定する場合">通常画面から設定する場合</h4>
+<ol>
 <li>画面右上にある歯車アイコンを押します。<br>
-<img src="img/setup_03.png" alt="setup_03.png"><br></li>
+<img src="img/setup_03.jpg" alt="setup_03.jpg"><br></li>
+<li>「チャットAI」の項目内にある、「APIキー」から、「今すぐ設定する」を選択します。<br>
+<img src="img/setup_03_1.jpg" alt="setup_03_1.jpg"><br></li>
 <li>表示されたダイアログ内のテキストボックスに、&quot;sk-&quot;から始まるOpenAIのAPIキーを入力します。<br>
-<img src="img/setup_04.png" alt="setup_04.png"><br></li>
+<img src="img/setup_04.jpg" alt="setup_04.jpg"><br></li>
 <li>「OpenAI」をクリックして、使用するchatGPTのバージョンを選択し、「閉じる」ボタンを押します。<h3 id="aiモデルのダウンロード">AIモデルのダウンロード</h3>
 初回起動時のチュートリアルの終了後、AIモデルのダウンロードが開始されます。
 ダウンロードの進捗は左のサイドバー下部にて確認できます。<br>
@@ -871,24 +888,14 @@
 <h2 id="openaiモデルの選択">OpenAIモデルの選択</h2>
 <ol>
 <li>ailia DX insightの画面にて、右上の歯車アイコンをクリックして設定ウィンドウを表示させます。<br>
-<img src="img/setup_03.png" alt="setup_03.png"><br></li>
+<img src="img/setup_03.jpg" alt="setup_03.png"><br></li>
 <li>「チャットAI」の項目の中にある「OpenAI」をクリックし、モデルを選択します。<br>
-<img src="img/setup_05.png" alt="setup_05.png"><br></li>
-</ol>
-<h4 id="gpto3-miniの追加方法">GPTo3-miniの追加方法</h4>
-<ol>
-<li>「チャットAI」の項目の中にある「OpenAI」をクリックし、「＋追加」を選択します。<br>
-<img src="img/setup_06.png" alt="setup_06.png"><br></li>
-<li>表示されるウィンドウ内で以下のように入力することでChatGPT o3-miniを使用することができます。<br>
-<img src="img/setup_07.png" alt="setup_07.png"><br><ul>
-<li>モデル：o3-mini</li>
-<li>最大トークン長：200000</li>
-<li>説明：必要に応じてメモとして使用</li>
-</ul>
-</li>
+<img src="img/setup_05.jpg" alt="setup_05.png"><br></li>
 </ol>
 <p><br>
-OpenAIがAPIでアクセスできるようにしているモデルであれば、同様の方法でチャットAIに追加することで使用できます。</p>
+※OpenAIがAPIでアクセスできるようにしているモデルであれば、モデル一覧の中になくとも追加することができます。<br>
+OpenAIのモデル一覧の一番下にある「+追加」を選択し、モデル名/最大トークン長/説明(任意)を入力し、「完了」を押してモデルを追加してください。<br></p>
+<p><img src="img/setup_LLMadd.jpg" alt="setup_LLMadd"></p>
 <div id="update10"></div>
 
 <h2 id="カラーテーマの変更">カラーテーマの変更</h2>
@@ -939,7 +946,7 @@ OpenAIがAPIでアクセスできるようにしているモデルであれば�
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/manage_accounts.png'>セットアップ","level":"1.3","depth":1,"next":{"title":"<img src='img_icons/newspaper.png'>v1.4リリースノート","level":"1.4","depth":1,"path":"v1_4update.md","ref":"v1_4update.md","articles":[]},"previous":{"title":"<img src='img_icons/overview.png'>概要","level":"1.2","depth":1,"path":"overview.md","ref":"overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"SetUp.md","mtime":"2025-10-09T01:19:21.622Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-10T01:07:50.358Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/manage_accounts.png'>セットアップ","level":"1.3","depth":1,"next":{"title":"<img src='img_icons/newspaper.png'>v1.4リリースノート","level":"1.4","depth":1,"path":"v1_4update.md","ref":"v1_4update.md","articles":[]},"previous":{"title":"<img src='img_icons/overview.png'>概要","level":"1.2","depth":1,"path":"overview.md","ref":"overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"SetUp.md","mtime":"2025-10-14T11:40:50.995Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-10-30T19:10:53.600Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
