@@ -858,8 +858,11 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="aiエージェントを利用する">AIエージェントを利用する</h1>
-<p>AIエージェントに必要なファイルへのアクセス権を与えることで、あなたに代わってファイルを直接編集させることができます。
-設定画面からアクセス権の範囲をあらかじめ指定できるため、安全にファイルの編集を依頼することが可能です。</p>
+<p>AIエージェントに必要なファイルへのアクセス権を与えることで、あなたに代わってファイルを直接編集させることができます。<br>
+設定画面からアクセス権の範囲をあらかじめ指定できるため、安全にファイルの編集を依頼することが可能です。<br></p>
+<h3 id="エージェントモードで使用可能なllm">エージェントモードで使用可能なLLM</h3>
+<p>エージェントモードは、OpenAI、Claude、Gemini、Gemma4で使用可能です。
+Azure、OpenRouter、Gemma4以外のローカルLLMでは使用できません。<br></p>
 <h2 id="ファイルを指定してaiエージェントに編集を依頼する">ファイルを指定してAIエージェントに編集を依頼する</h2>
 <p>アプリモードはチャットにして下さい。</p>
 <ol>
@@ -880,9 +883,16 @@
 <img src="img/AgentMode04.jpg" alt="AgentMode04"><br></p>
 </li>
 </ol>
-<h2 id="エージェントのファイル権限を管理する">エージェントのファイル権限を管理する</h2>
-<p>設定画面内の「エージェント」項目から、AIエージェントによるPC内や外部クラウドレポジトリ上のファイルへの「読み込み」「書き込み」権限を管理できます。<br>
+<h2 id="エージェントの設定を変更する">エージェントの設定を変更する</h2>
+<p>設定画面内の「エージェント」項目から、AIエージェントに関する詳細な設定を変更することができます。<br>
 <img src="img/AgentMode05.jpg" alt="AgentMode05"><br></p>
+<p>最大反復回数 : 一回の質問に対して、エージェントが最大で何回、思考するかの最大値を定義します。複雑なタスクを行う場合は大きくします。</p>
+<p>最大出力文字数 : エージェントが使用する各ツールの最大出力文字数を指定します。ファイル読み込みツールでは、このサイズを超えるファイルは分割して読み込まれます。</p>
+<p>コンテキストの大きいクラウドLLMを使用する場合、この値を大きくすることで動作速度を改善することが可能です。</p>
+<p>なお、思考ループ中は、全ツールの出力を保持しますが、LLMのコンテキスト長の75%を超えた場合はコンパクションによって圧縮されます。</p>
+<h3 id="エージェントのファイル権限を管理する">エージェントのファイル権限を管理する</h3>
+<p>AIエージェントによるPC内や外部クラウドレポジトリ上のファイルへの「読み込み」「書き込み」権限を管理することで、より安全にAIエージェント機能を利用することができます。<br>
+<img src="img/AgentMode06.jpg" alt="AgentMode06"><br></p>
 <p>※「エージェント権限確認」画面でアクセスを許可し、「設定に追加」を選択した場合も、自動的にこちらの設定へ反映されます。</p>
 <p><strong>書き込み許可ディレクトリ</strong> : ここに登録されたディレクトリ内のファイルに対して、エージェントへの書き込みを許可します。</p>
 <p><strong>読み込み可能パス</strong> : ここに登録されたパスのファイルに対して、エージェントへの読み込みを許可します。</p>
@@ -935,7 +945,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/robot.png'>AIエージェント","level":"3.1.2","depth":2,"next":{"title":"<img src='img_icons/forum.png'>文書ファイルについて質問する","level":"3.1.3","depth":2,"path":"DocumentFile.md","ref":"DocumentFile.md","articles":[]},"previous":{"title":"<img src='img_icons/forum.png'>AIに質問する","level":"3.1.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"AgentMode.md","mtime":"2026-06-30T04:08:26.001Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2026-06-30T06:51:50.518Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/robot.png'>AIエージェント","level":"3.1.2","depth":2,"next":{"title":"<img src='img_icons/forum.png'>文書ファイルについて質問する","level":"3.1.3","depth":2,"path":"DocumentFile.md","ref":"DocumentFile.md","articles":[]},"previous":{"title":"<img src='img_icons/forum.png'>AIに質問する","level":"3.1.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"AgentMode.md","mtime":"2026-07-01T02:08:43.375Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2026-07-01T02:19:17.237Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
