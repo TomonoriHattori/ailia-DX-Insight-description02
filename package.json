@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "honkit": "^5.1.1"
+    "honkit": "^5.1.1",
+    "image-size": "^1.2.1"
   },
   "dependencies": {
     "gitbook-plugin-back-to-top-button": "^0.1.4",
@@ -9,6 +10,8 @@
     "gitbook-plugin-intopic-toc": "^1.1.1"
   },
   "scripts": {
-    "dev": "node TitleChange.js"
+    "dev": "node TitleChange.js",
+    "build": "honkit build && node TitleChange.js && node ImageSize.js",
+    "serve": "honkit serve"
   }
 }

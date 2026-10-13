@@ -212,3 +212,93 @@ table {
   width: 22px;
   transform: translate(0%,20%);
 }
+
+
+/* ===== サイドバーのアイコン（SUMMARY.md にはアイコンを書かない） ===== */
+
+/* 共通：アイコンの枠（今の .chapter img と同じ 22px・同じ位置） */
+.book-summary li.chapter > a::before,
+.book-summary li.chapter > span::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(0%, 20%);
+}
+
+/* --- 1. HOME〜リリースノート --- */
+.book-summary li[data-path="./"] > a::before                 { background-image: url("../img_icons/home.png"); }
+.book-summary li[data-path="overview.html"] > a::before      { background-image: url("../img_icons/overview.png"); }
+.book-summary li[data-path="SetUp.html"] > a::before         { background-image: url("../img_icons/manage_accounts.png"); }
+.book-summary li[data-path="v1_5update.html"] > a::before,
+.book-summary li[data-path="v1_4update.html"] > a::before,
+.book-summary li[data-path="v1_3update.html"] > a::before,
+.book-summary li[data-path="v1_2update.html"] > a::before,
+.book-summary li[data-path="v1_1update.html"] > a::before    { background-image: url("../img_icons/newspaper.png"); }
+
+/* --- 2. 主な操作方法 --- */
+.book-summary li[data-path="MainOperation.html"] > a::before { background-image: url("../img_icons/label_important.png"); }
+.book-summary li[data-path="FileView.html"] > a::before      { background-image: url("../img_icons/rule_folder.png"); }
+.book-summary li[data-path="IndexRegister.html"] > a::before { background-image: url("../img_icons/task.png"); }
+
+/* --- 3. AIを使う --- */
+.book-summary li[data-path="UseAI.html"] > a::before,
+.book-summary li[data-path="AzureOpenAI.html"] > a::before,
+.book-summary li[data-path="Gemini.html"] > a::before,
+.book-summary li[data-path="Claude.html"] > a::before        { background-image: url("../img_icons/psychology.png"); }
+.book-summary li[data-path="AskToAI.html"] > a::before,
+.book-summary li[data-path="DocumentFile.html"] > a::before  { background-image: url("../img_icons/forum.png"); }
+.book-summary li[data-path="AgentMode.html"] > a::before     { background-image: url("../img_icons/robot.png"); }
+.book-summary li[data-path="AskAboutImage.html"] > a::before { background-image: url("../img_icons/photo_auto_merge.png"); }
+.book-summary li[data-path="SummarizeDocument.html"] > a::before { background-image: url("../img_icons/summarize.png"); }
+.book-summary li[data-path="Translation.html"] > a::before   { background-image: url("../img_icons/translate.png"); }
+.book-summary li[data-path="Proofread.html"] > a::before     { background-image: url("../img_icons/spellcheck.png"); }
+.book-summary li[data-path="SearchImage.html"] > a::before   { background-image: url("../img_icons/image_search.png"); }
+.book-summary li[data-path="GenerateImage.html"] > a::before,
+.book-summary li[data-path="EditImage.html"] > a::before     { background-image: url("../img_icons/palette.png"); }
+.book-summary li[data-path="Recording.html"] > a::before,
+.book-summary li[data-path="GenerateVoice.html"] > a::before { background-image: url("../img_icons/record_voice_over.png"); }
+.book-summary li[data-path="VoiceInput.html"] > a::before    { background-image: url("../img_icons/mic.png"); }
+
+/* --- 4. 便利機能 --- */
+.book-summary li[data-level="4.1"] > span::before            { background-image: url("../img_icons/star.png"); }
+.book-summary li[data-path="LocalLLM.html"] > a::before,
+.book-summary li[data-path="CustomLLM.html"] > a::before,
+.book-summary li[data-path="CustomLLM_LMstudio.html"] > a::before,
+.book-summary li[data-path="CustomLLM_Ollama.html"] > a::before,
+.book-summary li[data-path="CustomLLM_FastChat.html"] > a::before,
+.book-summary li[data-path="CustomLLM_Recomend.html"] > a::before { background-image: url("../img_icons/tune.png"); }
+.book-summary li[data-path="Benchmark.html"] > a::before     { background-image: url("../img_icons/bar_chart.png"); }
+.book-summary li[data-path="ChatHistory.html"] > a::before   { background-image: url("../img_icons/History.svg"); }
+
+/* --- 5. さらに詳しく --- */
+.book-summary li[data-level="5.1"] > span::before            { background-image: url("../img_icons/more.png"); }
+.book-summary li[data-path="Security.html"] > a::before      { background-image: url("../img_icons/vpn_lock.png"); }
+.book-summary li[data-path="RAG.html"] > a::before           { background-image: url("../img_icons/book_4_spark.png"); }
+.book-summary li[data-path="Embedding.html"] > a::before     { background-image: url("../img_icons/polyline.png"); }
+
+/* --- 6. OpenAIについて --- */
+.book-summary li[data-level="6.1"] > span::before,
+.book-summary li[data-path="OpenAI_APIKey.html"] > a::before,
+.book-summary li[data-path="Pricing.html"] > a::before,
+.book-summary li[data-path="OpenAI_Organization.html"] > a::before { background-image: url("../img_icons/info.png"); }
+
+/* --- 7. 外部リンク --- */
+.book-summary li[data-level="7.1"] > span::before,
+.book-summary a[href="https://www.youtube.com/watch?v=jGhKwrF3by8"]::before { background-image: url("../img_icons/play_circle.png"); }
+.book-summary a[href="https://ailia.ai/dx/"]::before         { background-image: url("../img_icons/download.png"); }
+
+/* --- 8. Language --- */
+.book-summary a[href="https://dx.ailia.ai"]::before          { background-image: url("../img_icons/language.png"); }
+/* ===== アンカー位置ズレ対策（A）=====
+   ImageSize.js が width/height を付けた画像（data-auto-size）に限り、
+   画面幅に合わせて縮小しても縦横比を保つよう高さを自動にする。
+   width/height 属性があるので、ブラウザは読み込み前から縦横比を知っており、
+   表示領域を先に確保できる。 */
+.markdown-section img[data-auto-size] {
+  max-width: 100%;
+  height: auto;
+}
