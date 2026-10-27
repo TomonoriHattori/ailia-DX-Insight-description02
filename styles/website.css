@@ -233,6 +233,7 @@ table {
 .book-summary li[data-path="./"] > a::before                 { background-image: url("../img_icons/home.png"); }
 .book-summary li[data-path="overview.html"] > a::before      { background-image: url("../img_icons/overview.png"); }
 .book-summary li[data-path="SetUp.html"] > a::before         { background-image: url("../img_icons/manage_accounts.png"); }
+.book-summary li[data-path="v1_5_1update.html"] > a::before,
 .book-summary li[data-path="v1_5update.html"] > a::before,
 .book-summary li[data-path="v1_4update.html"] > a::before,
 .book-summary li[data-path="v1_3update.html"] > a::before,
@@ -279,6 +280,7 @@ table {
 .book-summary li[data-path="Security.html"] > a::before      { background-image: url("../img_icons/vpn_lock.png"); }
 .book-summary li[data-path="RAG.html"] > a::before           { background-image: url("../img_icons/book_4_spark.png"); }
 .book-summary li[data-path="Embedding.html"] > a::before     { background-image: url("../img_icons/polyline.png"); }
+.book-summary li[data-path="Proxy.html"] > a::before     { background-image: url("../img_icons/settings.png"); }
 
 /* --- 6. OpenAIについて --- */
 .book-summary li[data-level="6.1"] > span::before,

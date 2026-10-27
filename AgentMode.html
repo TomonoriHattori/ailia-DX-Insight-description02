@@ -119,7 +119,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="v1_5update.html">
+        <li class="chapter " data-level="1.4" data-path="v1_5_1update.html">
+            
+                <a href="v1_5_1update.html">
+            
+                    
+                    v1.5.1リリースノート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="v1_5update.html">
             
                 <a href="v1_5update.html">
             
@@ -132,7 +145,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="v1_4update.html">
+        <li class="chapter " data-level="1.6" data-path="v1_4update.html">
             
                 <a href="v1_4update.html">
             
@@ -145,7 +158,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="v1_3update.html">
+        <li class="chapter " data-level="1.7" data-path="v1_3update.html">
             
                 <a href="v1_3update.html">
             
@@ -158,7 +171,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="v1_2update.html">
+        <li class="chapter " data-level="1.8" data-path="v1_2update.html">
             
                 <a href="v1_2update.html">
             
@@ -171,7 +184,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="v1_1update.html">
+        <li class="chapter " data-level="1.9" data-path="v1_1update.html">
             
                 <a href="v1_1update.html">
             
@@ -601,7 +614,20 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.2" data-path="RAG.html">
+        <li class="chapter " data-level="5.1.2" data-path="Proxy.html">
+            
+                <a href="Proxy.html">
+            
+                    
+                    プロキシの設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="RAG.html">
             
                 <a href="RAG.html">
             
@@ -614,7 +640,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.3" data-path="Embedding.html">
+        <li class="chapter " data-level="5.1.4" data-path="Embedding.html">
             
                 <a href="Embedding.html">
             
@@ -627,7 +653,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.4" data-path="AzureOpenAI.html">
+        <li class="chapter " data-level="5.1.5" data-path="AzureOpenAI.html">
             
                 <a href="AzureOpenAI.html">
             
@@ -640,7 +666,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.5" data-path="Gemini.html">
+        <li class="chapter " data-level="5.1.6" data-path="Gemini.html">
             
                 <a href="Gemini.html">
             
@@ -653,7 +679,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.6" data-path="Claude.html">
+        <li class="chapter " data-level="5.1.7" data-path="Claude.html">
             
                 <a href="Claude.html">
             
@@ -893,6 +919,19 @@ Azure、OpenRouter、Gemma4以外のローカルLLMでは使用できません�
 <p><strong>Fetch許可URL</strong> : GitHubなどの外部クラウドレポジトリと連携し、AIエージェントにデータの同期・取得（Fetch）を許可する場合は、対象のレポジトリURLを登録してください。</p>
 <p><strong>Fetch拒否URL</strong> : AIエージェントによるFetchを拒否したいURLがある場合は、対象のレポジトリURLを登録してください。
 <br></p>
+<h2 id="mcpサーバを追加する">MCPサーバを追加する</h2>
+<p>設定画面の「エージェント」項目からMCPサーバを追加すると、AIエージェントでサーバのツールを利用できます。</p>
+<ol>
+<li>「MCPサーバ」の追加ボタンをクリックし、「MCPサーバを追加」画面を開きます。</li>
+<li>以下の例を入力します。<ul>
+<li>サーバ名：Microsoft Docs</li>
+<li>URL：<a href="https://learn.microsoft.com/api/mcp" target="_blank">https://learn.microsoft.com/api/mcp</a></li>
+</ul>
+</li>
+<li>カスタムヘッダが必要なサーバを追加する場合は、「カスタムヘッダ」に「名前: 値」の形式で1行に1組ずつ入力します。この例では入力不要です。</li>
+<li>ツールの実行前に確認したい場合は、「実行毎に確認ダイアログを表示」にチェックを入れます。</li>
+<li>「保存」をクリックします。保存するとサーバに接続します。ツールの有効・無効は、接続後に編集画面で設定できます。</li>
+</ol>
 <h4 id="次のページへ ＞"><a href="DocumentFile.html">次のページへ ＞</a></h4>
 <h4 id="一覧に戻る"><a href="UseAI.html">一覧に戻る</a></h4>
 
@@ -922,7 +961,7 @@ Azure、OpenRouter、Gemma4以外のローカルLLMでは使用できません�
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AIエージェント","level":"3.1.2","depth":2,"next":{"title":"文書ファイルについて質問する","level":"3.1.3","depth":2,"path":"DocumentFile.md","ref":"DocumentFile.md","articles":[]},"previous":{"title":"AIに質問する","level":"3.1.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"AgentMode.md","mtime":"2026-07-01T02:08:43.375Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2026-10-13T03:10:09.744Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AIエージェント","level":"3.1.2","depth":2,"next":{"title":"文書ファイルについて質問する","level":"3.1.3","depth":2,"path":"DocumentFile.md","ref":"DocumentFile.md","articles":[]},"previous":{"title":"AIに質問する","level":"3.1.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"AgentMode.md","mtime":"2026-10-27T04:37:01.841Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2026-10-27T06:04:47.555Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

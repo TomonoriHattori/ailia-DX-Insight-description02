@@ -1,0 +1,12 @@
+{
+  "language": "ja",
+  "title": "ailia DX Insight",
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "plugins":[
+    "back-to-top-button","hide-published-with","custom-favicon"],
+  "pluginsConfig": {
+    "favicon": "img/favicon.ico"
+  }
+}

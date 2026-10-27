@@ -12,6 +12,7 @@
   "scripts": {
     "dev": "node TitleChange.js",
     "build": "honkit build && node TitleChange.js && node ImageSize.js",
-    "serve": "honkit serve"
+    "serve": "honkit serve",
+    "pdf": "node pdf.js"
   }
 }
